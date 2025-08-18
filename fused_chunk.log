@@ -1,3963 +1,4755 @@
-基准测试结果 for version: fused_chunk
-测试运行于: 2025年 08月 15日 星期五 11:42:04 CST
+Benchmark results for version: fused_chunk
+Test run on: 2025年 08月 16日 星期六 23:33:04 CST
 ----------------------------------------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 4096, 64]
-输入形状 (g): [B, T, H] = [1, 4096, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 64])
-平均执行时间: 367.82 us
+Average Execution Time: 366.17 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 4096, 96]
-输入形状 (g): [B, T, H] = [1, 4096, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 96])
-平均执行时间: 371.42 us
+Average Execution Time: 372.88 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 4096, 128]
-输入形状 (g): [B, T, H] = [1, 4096, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 128])
-平均执行时间: 422.89 us
+Average Execution Time: 379.50 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 4096, 160]
-输入形状 (g): [B, T, H] = [1, 4096, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 160])
-平均执行时间: 400.90 us
+Average Execution Time: 400.71 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 4096, 192]
-输入形状 (g): [B, T, H] = [1, 4096, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 192])
-平均执行时间: 525.28 us
+Average Execution Time: 406.75 us
+--------------------
+
+--- Test Parameters: B=1, H=2, T=4096, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 4096, 2, 256])
+Average Execution Time: 427.42 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 8192, 64]
-输入形状 (g): [B, T, H] = [1, 8192, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 64])
-平均执行时间: 720.87 us
+Average Execution Time: 721.92 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 8192, 96]
-输入形状 (g): [B, T, H] = [1, 8192, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 96])
-平均执行时间: 759.88 us
+Average Execution Time: 760.99 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 8192, 128]
-输入形状 (g): [B, T, H] = [1, 8192, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 128])
-平均执行时间: 763.23 us
+Average Execution Time: 763.81 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 8192, 160]
-输入形状 (g): [B, T, H] = [1, 8192, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 160])
-平均执行时间: 808.87 us
+Average Execution Time: 809.73 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 8192, 192]
-输入形状 (g): [B, T, H] = [1, 8192, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 192])
-平均执行时间: 832.37 us
+Average Execution Time: 831.31 us
+--------------------
+
+--- Test Parameters: B=1, H=2, T=8192, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 8192, 2, 256])
+Average Execution Time: 857.22 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 16384, 64]
-输入形状 (g): [B, T, H] = [1, 16384, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 64])
-平均执行时间: 1431.64 us
+Average Execution Time: 1420.98 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 16384, 96]
-输入形状 (g): [B, T, H] = [1, 16384, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 96])
-平均执行时间: 1554.19 us
+Average Execution Time: 1551.82 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 16384, 128]
-输入形状 (g): [B, T, H] = [1, 16384, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 128])
-平均执行时间: 1544.65 us
+Average Execution Time: 1545.08 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 16384, 160]
-输入形状 (g): [B, T, H] = [1, 16384, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 160])
-平均执行时间: 1630.98 us
+Average Execution Time: 1630.62 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 16384, 192]
-输入形状 (g): [B, T, H] = [1, 16384, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 192])
-平均执行时间: 1665.03 us
+Average Execution Time: 1661.78 us
+--------------------
+
+--- Test Parameters: B=1, H=2, T=16384, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 16384, 2, 256])
+Average Execution Time: 1696.22 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 32768, 64]
-输入形状 (g): [B, T, H] = [1, 32768, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 64])
-平均执行时间: 2926.92 us
+Average Execution Time: 2928.47 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 32768, 96]
-输入形状 (g): [B, T, H] = [1, 32768, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 96])
-平均执行时间: 3129.22 us
+Average Execution Time: 3131.83 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 32768, 128]
-输入形状 (g): [B, T, H] = [1, 32768, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 128])
-平均执行时间: 3098.88 us
+Average Execution Time: 3092.86 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 32768, 160]
-输入形状 (g): [B, T, H] = [1, 32768, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 160])
-平均执行时间: 3251.12 us
+Average Execution Time: 3249.90 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 32768, 192]
-输入形状 (g): [B, T, H] = [1, 32768, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 192])
-平均执行时间: 3303.86 us
+Average Execution Time: 3302.63 us
+--------------------
+
+--- Test Parameters: B=1, H=2, T=32768, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 32768, 2, 256])
+Average Execution Time: 3386.31 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 65536, 64]
-输入形状 (g): [B, T, H] = [1, 65536, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 64])
-平均执行时间: 6062.54 us
+Average Execution Time: 6061.47 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 65536, 96]
-输入形状 (g): [B, T, H] = [1, 65536, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 96])
-平均执行时间: 6263.23 us
+Average Execution Time: 6265.52 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 65536, 128]
-输入形状 (g): [B, T, H] = [1, 65536, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 128])
-平均执行时间: 6204.07 us
+Average Execution Time: 6199.83 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 65536, 160]
-输入形状 (g): [B, T, H] = [1, 65536, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 160])
-平均执行时间: 6492.27 us
+Average Execution Time: 6493.66 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 65536, 192]
-输入形状 (g): [B, T, H] = [1, 65536, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 192])
-平均执行时间: 6604.45 us
+Average Execution Time: 6602.47 us
+--------------------
+
+--- Test Parameters: B=1, H=2, T=65536, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 65536, 2, 256])
+Average Execution Time: 6717.04 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 131072, 64]
-输入形状 (g): [B, T, H] = [1, 131072, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 64])
-平均执行时间: 12277.35 us
+Average Execution Time: 12284.30 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 131072, 96]
-输入形状 (g): [B, T, H] = [1, 131072, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 96])
-平均执行时间: 12546.83 us
+Average Execution Time: 12546.53 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 131072, 128]
-输入形状 (g): [B, T, H] = [1, 131072, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 128])
-平均执行时间: 12378.94 us
+Average Execution Time: 12392.18 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 131072, 160]
-输入形状 (g): [B, T, H] = [1, 131072, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 160])
-平均执行时间: 12971.26 us
+Average Execution Time: 12976.02 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 2, 131072, 192]
-输入形状 (g): [B, T, H] = [1, 131072, 2]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 192])
-平均执行时间: 13170.52 us
+Average Execution Time: 13170.38 us
+--------------------
+
+--- Test Parameters: B=1, H=2, T=131072, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 131072, 2, 256])
+Average Execution Time: 13455.05 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 4096, 64]
-输入形状 (g): [B, T, H] = [1, 4096, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 64])
-平均执行时间: 365.89 us
+Average Execution Time: 366.46 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 4096, 96]
-输入形状 (g): [B, T, H] = [1, 4096, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 96])
-平均执行时间: 399.47 us
+Average Execution Time: 399.04 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 4096, 128]
-输入形状 (g): [B, T, H] = [1, 4096, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 128])
-平均执行时间: 460.73 us
+Average Execution Time: 406.39 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 4096, 160]
-输入形状 (g): [B, T, H] = [1, 4096, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 160])
-平均执行时间: 442.13 us
+Average Execution Time: 442.96 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 4096, 192]
-输入形状 (g): [B, T, H] = [1, 4096, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 192])
-平均执行时间: 460.11 us
+Average Execution Time: 461.18 us
+--------------------
+
+--- Test Parameters: B=1, H=4, T=4096, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 4096, 4, 256])
+Average Execution Time: 501.38 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 8192, 64]
-输入形状 (g): [B, T, H] = [1, 8192, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 64])
-平均执行时间: 723.49 us
+Average Execution Time: 723.48 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 8192, 96]
-输入形状 (g): [B, T, H] = [1, 8192, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 96])
-平均执行时间: 810.69 us
+Average Execution Time: 813.39 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 8192, 128]
-输入形状 (g): [B, T, H] = [1, 8192, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 128])
-平均执行时间: 824.13 us
+Average Execution Time: 824.60 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 8192, 160]
-输入形状 (g): [B, T, H] = [1, 8192, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 160])
-平均执行时间: 891.41 us
+Average Execution Time: 891.35 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 8192, 192]
-输入形状 (g): [B, T, H] = [1, 8192, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 192])
-平均执行时间: 920.79 us
+Average Execution Time: 921.73 us
+--------------------
+
+--- Test Parameters: B=1, H=4, T=8192, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 8192, 4, 256])
+Average Execution Time: 990.13 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 16384, 64]
-输入形状 (g): [B, T, H] = [1, 16384, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 64])
-平均执行时间: 1476.17 us
+Average Execution Time: 1477.28 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 16384, 96]
-输入形状 (g): [B, T, H] = [1, 16384, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 96])
-平均执行时间: 1635.72 us
+Average Execution Time: 1638.12 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 16384, 128]
-输入形状 (g): [B, T, H] = [1, 16384, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 128])
-平均执行时间: 1643.54 us
+Average Execution Time: 1643.73 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 16384, 160]
-输入形状 (g): [B, T, H] = [1, 16384, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 160])
-平均执行时间: 1768.61 us
+Average Execution Time: 1766.83 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 16384, 192]
-输入形状 (g): [B, T, H] = [1, 16384, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 192])
-平均执行时间: 1817.54 us
+Average Execution Time: 1819.53 us
+--------------------
+
+--- Test Parameters: B=1, H=4, T=16384, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 16384, 4, 256])
+Average Execution Time: 1935.65 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 32768, 64]
-输入形状 (g): [B, T, H] = [1, 32768, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 64])
-平均执行时间: 3034.89 us
+Average Execution Time: 3033.98 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 32768, 96]
-输入形状 (g): [B, T, H] = [1, 32768, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 96])
-平均执行时间: 3263.50 us
+Average Execution Time: 3263.94 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 32768, 128]
-输入形状 (g): [B, T, H] = [1, 32768, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 128])
-平均执行时间: 3287.60 us
+Average Execution Time: 3289.49 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 32768, 160]
-输入形状 (g): [B, T, H] = [1, 32768, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 160])
-平均执行时间: 3514.12 us
+Average Execution Time: 3519.22 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 32768, 192]
-输入形状 (g): [B, T, H] = [1, 32768, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 192])
-平均执行时间: 3626.20 us
+Average Execution Time: 3626.49 us
+--------------------
+
+--- Test Parameters: B=1, H=4, T=32768, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 32768, 4, 256])
+Average Execution Time: 3844.92 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 65536, 64]
-输入形状 (g): [B, T, H] = [1, 65536, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 64])
-平均执行时间: 6159.07 us
+Average Execution Time: 6158.21 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 65536, 96]
-输入形状 (g): [B, T, H] = [1, 65536, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 96])
-平均执行时间: 6525.95 us
+Average Execution Time: 6535.16 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 65536, 128]
-输入形状 (g): [B, T, H] = [1, 65536, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 128])
-平均执行时间: 6556.46 us
+Average Execution Time: 6554.04 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 65536, 160]
-输入形状 (g): [B, T, H] = [1, 65536, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 160])
-平均执行时间: 7003.92 us
+Average Execution Time: 7005.92 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 65536, 192]
-输入形状 (g): [B, T, H] = [1, 65536, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 192])
-平均执行时间: 7211.32 us
+Average Execution Time: 7208.94 us
+--------------------
+
+--- Test Parameters: B=1, H=4, T=65536, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 65536, 4, 256])
+Average Execution Time: 7717.63 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 131072, 64]
-输入形状 (g): [B, T, H] = [1, 131072, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 64])
-平均执行时间: 12384.65 us
+Average Execution Time: 12386.60 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 131072, 96]
-输入形状 (g): [B, T, H] = [1, 131072, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 96])
-平均执行时间: 13031.05 us
+Average Execution Time: 13034.28 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 131072, 128]
-输入形状 (g): [B, T, H] = [1, 131072, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 128])
-平均执行时间: 13100.25 us
+Average Execution Time: 13101.31 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 131072, 160]
-输入形状 (g): [B, T, H] = [1, 131072, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 160])
-平均执行时间: 13949.27 us
+Average Execution Time: 13947.37 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 4, 131072, 192]
-输入形状 (g): [B, T, H] = [1, 131072, 4]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 192])
-平均执行时间: 14386.04 us
+Average Execution Time: 14387.15 us
+--------------------
+
+--- Test Parameters: B=1, H=4, T=131072, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 131072, 4, 256])
+Average Execution Time: 15497.28 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 4096, 64]
-输入形状 (g): [B, T, H] = [1, 4096, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 64])
-平均执行时间: 475.79 us
+Average Execution Time: 373.97 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 4096, 96]
-输入形状 (g): [B, T, H] = [1, 4096, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 96])
-平均执行时间: 444.52 us
+Average Execution Time: 445.07 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 4096, 128]
-输入形状 (g): [B, T, H] = [1, 4096, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 128])
-平均执行时间: 585.37 us
+Average Execution Time: 464.18 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 4096, 160]
-输入形状 (g): [B, T, H] = [1, 4096, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 160])
-平均执行时间: 525.93 us
+Average Execution Time: 526.23 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 4096, 192]
-输入形状 (g): [B, T, H] = [1, 4096, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 192])
-平均执行时间: 555.64 us
+Average Execution Time: 556.43 us
+--------------------
+
+--- Test Parameters: B=1, H=8, T=4096, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 4096, 8, 256])
+Average Execution Time: 747.29 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 8192, 64]
-输入形状 (g): [B, T, H] = [1, 8192, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 64])
-平均执行时间: 754.68 us
+Average Execution Time: 754.22 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 8192, 96]
-输入形状 (g): [B, T, H] = [1, 8192, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 96])
-平均执行时间: 899.82 us
+Average Execution Time: 902.54 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 8192, 128]
-输入形状 (g): [B, T, H] = [1, 8192, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 128])
-平均执行时间: 922.44 us
+Average Execution Time: 923.01 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 8192, 160]
-输入形状 (g): [B, T, H] = [1, 8192, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 160])
-平均执行时间: 1040.70 us
+Average Execution Time: 1038.95 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 8192, 192]
-输入形状 (g): [B, T, H] = [1, 8192, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 192])
-平均执行时间: 1090.85 us
+Average Execution Time: 1091.56 us
+--------------------
+
+--- Test Parameters: B=1, H=8, T=8192, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 8192, 8, 256])
+Average Execution Time: 1492.78 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 16384, 64]
-输入形状 (g): [B, T, H] = [1, 16384, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 64])
-平均执行时间: 1546.86 us
+Average Execution Time: 1546.70 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 16384, 96]
-输入形状 (g): [B, T, H] = [1, 16384, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 96])
-平均执行时间: 1781.05 us
+Average Execution Time: 1784.59 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 16384, 128]
-输入形状 (g): [B, T, H] = [1, 16384, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 128])
-平均执行时间: 1829.48 us
+Average Execution Time: 1835.72 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 16384, 160]
-输入形状 (g): [B, T, H] = [1, 16384, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 160])
-平均执行时间: 2058.63 us
+Average Execution Time: 2056.90 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 16384, 192]
-输入形状 (g): [B, T, H] = [1, 16384, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 192])
-平均执行时间: 2158.72 us
+Average Execution Time: 2161.59 us
+--------------------
+
+--- Test Parameters: B=1, H=8, T=16384, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 16384, 8, 256])
+Average Execution Time: 2942.93 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 32768, 64]
-输入形状 (g): [B, T, H] = [1, 32768, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 64])
-平均执行时间: 3126.01 us
+Average Execution Time: 3126.51 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 32768, 96]
-输入形状 (g): [B, T, H] = [1, 32768, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 96])
-平均执行时间: 3555.90 us
+Average Execution Time: 3552.60 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 32768, 128]
-输入形状 (g): [B, T, H] = [1, 32768, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 128])
-平均执行时间: 3642.04 us
+Average Execution Time: 3646.68 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 32768, 160]
-输入形状 (g): [B, T, H] = [1, 32768, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 160])
-平均执行时间: 4082.51 us
+Average Execution Time: 4083.90 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 32768, 192]
-输入形状 (g): [B, T, H] = [1, 32768, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 192])
-平均执行时间: 4289.47 us
+Average Execution Time: 4285.46 us
+--------------------
+
+--- Test Parameters: B=1, H=8, T=32768, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 32768, 8, 256])
+Average Execution Time: 5861.59 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 65536, 64]
-输入形状 (g): [B, T, H] = [1, 65536, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 64])
-平均执行时间: 6287.50 us
+Average Execution Time: 6289.16 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 65536, 96]
-输入形状 (g): [B, T, H] = [1, 65536, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 96])
-平均执行时间: 7070.47 us
+Average Execution Time: 7076.54 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 65536, 128]
-输入形状 (g): [B, T, H] = [1, 65536, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 128])
-平均执行时间: 7261.50 us
+Average Execution Time: 7264.72 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 65536, 160]
-输入形状 (g): [B, T, H] = [1, 65536, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 160])
-平均执行时间: 8121.44 us
+Average Execution Time: 8123.71 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 65536, 192]
-输入形状 (g): [B, T, H] = [1, 65536, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 192])
-平均执行时间: 8546.51 us
+Average Execution Time: 8539.53 us
+--------------------
+
+--- Test Parameters: B=1, H=8, T=65536, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 65536, 8, 256])
+Average Execution Time: 11630.04 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 131072, 64]
-输入形状 (g): [B, T, H] = [1, 131072, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 64])
-平均执行时间: 12597.63 us
+Average Execution Time: 12591.98 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 131072, 96]
-输入形状 (g): [B, T, H] = [1, 131072, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 96])
-平均执行时间: 14118.81 us
+Average Execution Time: 14138.57 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 131072, 128]
-输入形状 (g): [B, T, H] = [1, 131072, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 128])
-平均执行时间: 14510.59 us
+Average Execution Time: 14509.19 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 131072, 160]
-输入形状 (g): [B, T, H] = [1, 131072, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 160])
-平均执行时间: 16238.56 us
+Average Execution Time: 16245.99 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 8, 131072, 192]
-输入形状 (g): [B, T, H] = [1, 131072, 8]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 192])
-平均执行时间: 18287.03 us
+Average Execution Time: 18298.72 us
+--------------------
+
+--- Test Parameters: B=1, H=8, T=131072, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 131072, 8, 256])
+Average Execution Time: 24711.15 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 4096, 64]
-输入形状 (g): [B, T, H] = [1, 4096, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 64])
-平均执行时间: 371.21 us
+Average Execution Time: 372.69 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 4096, 96]
-输入形状 (g): [B, T, H] = [1, 4096, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 96])
-平均执行时间: 495.17 us
+Average Execution Time: 480.93 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 4096, 128]
-输入形状 (g): [B, T, H] = [1, 4096, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 128])
-平均执行时间: 668.56 us
+Average Execution Time: 515.76 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 4096, 160]
-输入形状 (g): [B, T, H] = [1, 4096, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 160])
-平均执行时间: 706.34 us
+Average Execution Time: 587.06 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 4096, 192]
-输入形状 (g): [B, T, H] = [1, 4096, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 192])
-平均执行时间: 632.82 us
+Average Execution Time: 638.60 us
+--------------------
+
+--- Test Parameters: B=1, H=12, T=4096, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 4096, 12, 256])
+Average Execution Time: 894.51 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 8192, 64]
-输入形状 (g): [B, T, H] = [1, 8192, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 64])
-平均执行时间: 775.92 us
+Average Execution Time: 776.94 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 8192, 96]
-输入形状 (g): [B, T, H] = [1, 8192, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 96])
-平均执行时间: 941.77 us
+Average Execution Time: 942.81 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 8192, 128]
-输入形状 (g): [B, T, H] = [1, 8192, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 128])
-平均执行时间: 1012.26 us
+Average Execution Time: 1014.11 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 8192, 160]
-输入形状 (g): [B, T, H] = [1, 8192, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 160])
-平均执行时间: 1163.52 us
+Average Execution Time: 1162.09 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 8192, 192]
-输入形状 (g): [B, T, H] = [1, 8192, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 192])
-平均执行时间: 1248.73 us
+Average Execution Time: 1251.27 us
+--------------------
+
+--- Test Parameters: B=1, H=12, T=8192, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 8192, 12, 256])
+Average Execution Time: 1698.27 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 16384, 64]
-输入形状 (g): [B, T, H] = [1, 16384, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 64])
-平均执行时间: 1578.25 us
+Average Execution Time: 1575.52 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 16384, 96]
-输入形状 (g): [B, T, H] = [1, 16384, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 96])
-平均执行时间: 1872.66 us
+Average Execution Time: 1873.25 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 16384, 128]
-输入形状 (g): [B, T, H] = [1, 16384, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 128])
-平均执行时间: 2013.45 us
+Average Execution Time: 2014.25 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 16384, 160]
-输入形状 (g): [B, T, H] = [1, 16384, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 160])
-平均执行时间: 2304.75 us
+Average Execution Time: 2309.62 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 16384, 192]
-输入形状 (g): [B, T, H] = [1, 16384, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 192])
-平均执行时间: 2487.12 us
+Average Execution Time: 2489.95 us
+--------------------
+
+--- Test Parameters: B=1, H=12, T=16384, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 16384, 12, 256])
+Average Execution Time: 3369.06 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 32768, 64]
-输入形状 (g): [B, T, H] = [1, 32768, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 64])
-平均执行时间: 3170.29 us
+Average Execution Time: 3168.36 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 32768, 96]
-输入形状 (g): [B, T, H] = [1, 32768, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 96])
-平均执行时间: 3740.22 us
+Average Execution Time: 3739.01 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 32768, 128]
-输入形状 (g): [B, T, H] = [1, 32768, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 128])
-平均执行时间: 3992.45 us
+Average Execution Time: 3992.52 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 32768, 160]
-输入形状 (g): [B, T, H] = [1, 32768, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 160])
-平均执行时间: 4613.79 us
+Average Execution Time: 4606.68 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 32768, 192]
-输入形状 (g): [B, T, H] = [1, 32768, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 192])
-平均执行时间: 4955.43 us
+Average Execution Time: 4960.34 us
+--------------------
+
+--- Test Parameters: B=1, H=12, T=32768, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 32768, 12, 256])
+Average Execution Time: 6739.53 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 65536, 64]
-输入形状 (g): [B, T, H] = [1, 65536, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 64])
-平均执行时间: 6358.59 us
+Average Execution Time: 6369.41 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 65536, 96]
-输入形状 (g): [B, T, H] = [1, 65536, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 96])
-平均执行时间: 7476.63 us
+Average Execution Time: 7441.72 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 65536, 128]
-输入形状 (g): [B, T, H] = [1, 65536, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 128])
-平均执行时间: 7972.80 us
+Average Execution Time: 7969.38 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 65536, 160]
-输入形状 (g): [B, T, H] = [1, 65536, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 160])
-平均执行时间: 9186.36 us
+Average Execution Time: 9189.95 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 65536, 192]
-输入形状 (g): [B, T, H] = [1, 65536, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 192])
-平均执行时间: 9902.05 us
+Average Execution Time: 9903.26 us
+--------------------
+
+--- Test Parameters: B=1, H=12, T=65536, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 65536, 12, 256])
+Average Execution Time: 14755.85 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 131072, 64]
-输入形状 (g): [B, T, H] = [1, 131072, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 64])
-平均执行时间: 12709.62 us
+Average Execution Time: 12712.93 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 131072, 96]
-输入形状 (g): [B, T, H] = [1, 131072, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 96])
-平均执行时间: 14922.84 us
+Average Execution Time: 14923.10 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 131072, 128]
-输入形状 (g): [B, T, H] = [1, 131072, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 128])
-平均执行时间: 15977.97 us
+Average Execution Time: 15980.27 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 131072, 160]
-输入形状 (g): [B, T, H] = [1, 131072, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 160])
-平均执行时间: 19789.94 us
+Average Execution Time: 19801.19 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 12, 131072, 192]
-输入形状 (g): [B, T, H] = [1, 131072, 12]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 192])
-平均执行时间: 23539.60 us
+Average Execution Time: 23525.40 us
+--------------------
+
+--- Test Parameters: B=1, H=12, T=131072, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 131072, 12, 256])
+Average Execution Time: 34724.10 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 4096, 64]
-输入形状 (g): [B, T, H] = [1, 4096, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 64])
-平均执行时间: 390.14 us
+Average Execution Time: 389.44 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 4096, 96]
-输入形状 (g): [B, T, H] = [1, 4096, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 96])
-平均执行时间: 643.67 us
+Average Execution Time: 522.52 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 4096, 128]
-输入形状 (g): [B, T, H] = [1, 4096, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 128])
-平均执行时间: 559.78 us
+Average Execution Time: 563.31 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 4096, 160]
-输入形状 (g): [B, T, H] = [1, 4096, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 160])
-平均执行时间: 775.81 us
+Average Execution Time: 769.28 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 4096, 192]
-输入形状 (g): [B, T, H] = [1, 4096, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 192])
-平均执行时间: 808.70 us
+Average Execution Time: 807.69 us
+--------------------
+
+--- Test Parameters: B=1, H=16, T=4096, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 4096, 16, 256])
+Average Execution Time: 1160.60 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 8192, 64]
-输入形状 (g): [B, T, H] = [1, 8192, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 64])
-平均执行时间: 791.48 us
+Average Execution Time: 791.47 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 8192, 96]
-输入形状 (g): [B, T, H] = [1, 8192, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 96])
-平均执行时间: 1033.72 us
+Average Execution Time: 1028.12 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 8192, 128]
-输入形状 (g): [B, T, H] = [1, 8192, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 128])
-平均执行时间: 1098.00 us
+Average Execution Time: 1099.06 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 8192, 160]
-输入形状 (g): [B, T, H] = [1, 8192, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 160])
-平均执行时间: 1507.55 us
+Average Execution Time: 1510.59 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 8192, 192]
-输入形状 (g): [B, T, H] = [1, 8192, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 192])
-平均执行时间: 1578.28 us
+Average Execution Time: 1575.99 us
+--------------------
+
+--- Test Parameters: B=1, H=16, T=8192, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 8192, 16, 256])
+Average Execution Time: 2336.41 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 16384, 64]
-输入形状 (g): [B, T, H] = [1, 16384, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 64])
-平均执行时间: 1589.17 us
+Average Execution Time: 1588.30 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 16384, 96]
-输入形状 (g): [B, T, H] = [1, 16384, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 96])
-平均执行时间: 2033.06 us
+Average Execution Time: 2033.51 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 16384, 128]
-输入形状 (g): [B, T, H] = [1, 16384, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 128])
-平均执行时间: 2175.23 us
+Average Execution Time: 2173.79 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 16384, 160]
-输入形状 (g): [B, T, H] = [1, 16384, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 160])
-平均执行时间: 2975.11 us
+Average Execution Time: 2975.24 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 16384, 192]
-输入形状 (g): [B, T, H] = [1, 16384, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 192])
-平均执行时间: 3116.77 us
+Average Execution Time: 3117.47 us
+--------------------
+
+--- Test Parameters: B=1, H=16, T=16384, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 16384, 16, 256])
+Average Execution Time: 4721.35 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 32768, 64]
-输入形状 (g): [B, T, H] = [1, 32768, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 64])
-平均执行时间: 3184.57 us
+Average Execution Time: 3177.61 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 32768, 96]
-输入形状 (g): [B, T, H] = [1, 32768, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 96])
-平均执行时间: 4042.59 us
+Average Execution Time: 4047.72 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 32768, 128]
-输入形状 (g): [B, T, H] = [1, 32768, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 128])
-平均执行时间: 4351.56 us
+Average Execution Time: 4340.53 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 32768, 160]
-输入形状 (g): [B, T, H] = [1, 32768, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 160])
-平均执行时间: 5921.78 us
+Average Execution Time: 5920.17 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 32768, 192]
-输入形状 (g): [B, T, H] = [1, 32768, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 192])
-平均执行时间: 6187.97 us
+Average Execution Time: 6188.41 us
+--------------------
+
+--- Test Parameters: B=1, H=16, T=32768, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 32768, 16, 256])
+Average Execution Time: 9357.79 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 65536, 64]
-输入形状 (g): [B, T, H] = [1, 65536, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 64])
-平均执行时间: 6373.27 us
+Average Execution Time: 6371.37 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 65536, 96]
-输入形状 (g): [B, T, H] = [1, 65536, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 96])
-平均执行时间: 8058.64 us
+Average Execution Time: 8064.37 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 65536, 128]
-输入形状 (g): [B, T, H] = [1, 65536, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 128])
-平均执行时间: 8633.04 us
+Average Execution Time: 8638.35 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 65536, 160]
-输入形状 (g): [B, T, H] = [1, 65536, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 160])
-平均执行时间: 11798.25 us
+Average Execution Time: 11788.70 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 65536, 192]
-输入形状 (g): [B, T, H] = [1, 65536, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 192])
-平均执行时间: 13519.43 us
+Average Execution Time: 13520.35 us
+--------------------
+
+--- Test Parameters: B=1, H=16, T=65536, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 65536, 16, 256])
+Average Execution Time: 20512.64 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 131072, 64]
-输入形状 (g): [B, T, H] = [1, 131072, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 64])
-平均执行时间: 12761.48 us
+Average Execution Time: 12757.82 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 131072, 96]
-输入形状 (g): [B, T, H] = [1, 131072, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 96])
-平均执行时间: 16174.07 us
+Average Execution Time: 16169.39 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 131072, 128]
-输入形状 (g): [B, T, H] = [1, 131072, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 128])
-平均执行时间: 17365.19 us
+Average Execution Time: 17360.48 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 131072, 160]
-输入形状 (g): [B, T, H] = [1, 131072, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 160])
-平均执行时间: 27834.85 us
+Average Execution Time: 27864.01 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 16, 131072, 192]
-输入形状 (g): [B, T, H] = [1, 131072, 16]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 192])
-平均执行时间: 29758.25 us
+Average Execution Time: 29745.87 us
+--------------------
+
+--- Test Parameters: B=1, H=16, T=131072, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 131072, 16, 256])
+Average Execution Time: 48069.21 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 4096, 64]
-输入形状 (g): [B, T, H] = [1, 4096, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 64])
-平均执行时间: 422.83 us
+Average Execution Time: 421.00 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 4096, 96]
-输入形状 (g): [B, T, H] = [1, 4096, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 96])
-平均执行时间: 890.66 us
+Average Execution Time: 768.75 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 4096, 128]
-输入形状 (g): [B, T, H] = [1, 4096, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 128])
-平均执行时间: 882.09 us
+Average Execution Time: 831.45 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 4096, 160]
-输入形状 (g): [B, T, H] = [1, 4096, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 160])
-平均执行时间: 1170.39 us
+Average Execution Time: 1172.09 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 4096, 192]
-输入形状 (g): [B, T, H] = [1, 4096, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 192])
-平均执行时间: 1260.05 us
+Average Execution Time: 1260.29 us
+--------------------
+
+--- Test Parameters: B=1, H=32, T=4096, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 4096, 32, 256])
+Average Execution Time: 2361.32 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 8192, 64]
-输入形状 (g): [B, T, H] = [1, 8192, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 64])
-平均执行时间: 846.98 us
+Average Execution Time: 843.72 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 8192, 96]
-输入形状 (g): [B, T, H] = [1, 8192, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 96])
-平均执行时间: 1518.45 us
+Average Execution Time: 1517.51 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 8192, 128]
-输入形状 (g): [B, T, H] = [1, 8192, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 128])
-平均执行时间: 1637.37 us
+Average Execution Time: 1634.07 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 8192, 160]
-输入形状 (g): [B, T, H] = [1, 8192, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 160])
-平均执行时间: 2368.78 us
+Average Execution Time: 2374.55 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 8192, 192]
-输入形状 (g): [B, T, H] = [1, 8192, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 192])
-平均执行时间: 2572.66 us
+Average Execution Time: 2585.27 us
+--------------------
+
+--- Test Parameters: B=1, H=32, T=8192, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 8192, 32, 256])
+Average Execution Time: 4722.25 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 16384, 64]
-输入形状 (g): [B, T, H] = [1, 16384, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 64])
-平均执行时间: 1689.92 us
+Average Execution Time: 1687.27 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 16384, 96]
-输入形状 (g): [B, T, H] = [1, 16384, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 96])
-平均执行时间: 2992.06 us
+Average Execution Time: 2993.06 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 16384, 128]
-输入形状 (g): [B, T, H] = [1, 16384, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 128])
-平均执行时间: 3251.89 us
+Average Execution Time: 3251.55 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 16384, 160]
-输入形状 (g): [B, T, H] = [1, 16384, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 160])
-平均执行时间: 4882.03 us
+Average Execution Time: 4893.91 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 16384, 192]
-输入形状 (g): [B, T, H] = [1, 16384, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 192])
-平均执行时间: 5253.30 us
+Average Execution Time: 5235.14 us
+--------------------
+
+--- Test Parameters: B=1, H=32, T=16384, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 16384, 32, 256])
+Average Execution Time: 9442.43 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 32768, 64]
-输入形状 (g): [B, T, H] = [1, 32768, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 64])
-平均执行时间: 3375.17 us
+Average Execution Time: 3377.97 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 32768, 96]
-输入形状 (g): [B, T, H] = [1, 32768, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 96])
-平均执行时间: 5956.52 us
+Average Execution Time: 5956.25 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 32768, 128]
-输入形状 (g): [B, T, H] = [1, 32768, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 128])
-平均执行时间: 6479.35 us
+Average Execution Time: 6487.73 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 32768, 160]
-输入形状 (g): [B, T, H] = [1, 32768, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 160])
-平均执行时间: 9875.05 us
+Average Execution Time: 9859.83 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 32768, 192]
-输入形状 (g): [B, T, H] = [1, 32768, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 192])
-平均执行时间: 11841.24 us
+Average Execution Time: 11853.23 us
+--------------------
+
+--- Test Parameters: B=1, H=32, T=32768, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 32768, 32, 256])
+Average Execution Time: 20487.90 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 65536, 64]
-输入形状 (g): [B, T, H] = [1, 65536, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 64])
-平均执行时间: 6758.16 us
+Average Execution Time: 6754.01 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 65536, 96]
-输入形状 (g): [B, T, H] = [1, 65536, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 96])
-平均执行时间: 11891.94 us
+Average Execution Time: 11885.99 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 65536, 128]
-输入形状 (g): [B, T, H] = [1, 65536, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 128])
-平均执行时间: 12947.20 us
+Average Execution Time: 12957.08 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 65536, 160]
-输入形状 (g): [B, T, H] = [1, 65536, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 160])
-平均执行时间: 24370.13 us
+Average Execution Time: 24383.02 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 65536, 192]
-输入形状 (g): [B, T, H] = [1, 65536, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 192])
-平均执行时间: 26578.71 us
+Average Execution Time: 26568.71 us
+--------------------
+
+--- Test Parameters: B=1, H=32, T=65536, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 65536, 32, 256])
+Average Execution Time: 48239.89 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=64 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 131072, 64]
-输入形状 (g): [B, T, H] = [1, 131072, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 64])
-平均执行时间: 13530.23 us
+Average Execution Time: 13533.18 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=96 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 131072, 96]
-输入形状 (g): [B, T, H] = [1, 131072, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 96])
-平均执行时间: 26104.34 us
+Average Execution Time: 26101.86 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=128 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 131072, 128]
-输入形状 (g): [B, T, H] = [1, 131072, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 128])
-平均执行时间: 29177.00 us
+Average Execution Time: 29172.77 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=160 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 131072, 160]
-输入形状 (g): [B, T, H] = [1, 131072, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 160])
-平均执行时间: 49370.85 us
+Average Execution Time: 49425.96 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=192 ---
----- 参数配置 ----
-测试版本: fused_chunk
-设备: cuda
-数据类型: torch.bfloat16
-输入形状 (q, k, v): [B, H, T, D] = [1, 32, 131072, 192]
-输入形状 (g): [B, T, H] = [1, 131072, 32]
-预热次数: 10
-计时次数: 50
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
 --------------------
 
-正在进行预热...
-预热完成。
+Starting warm-up...
+Warm-up complete.
 
-开始计时，执行 50 轮...
-计时结束。
+Starting timer for 50 runs...
+Timing complete.
 
----- 测试结果 ----
+---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 192])
-平均执行时间: 53861.83 us
+Average Execution Time: 53841.92 us
+--------------------
+
+--- Test Parameters: B=1, H=32, T=131072, D=256 ---
+---- Configuration ----
+Version to Test: fused_chunk
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+--------------------
+
+Starting warm-up...
+Warm-up complete.
+
+Starting timer for 50 runs...
+Timing complete.
+
+---- Benchmark Results ----
+Output Shape: torch.Size([1, 131072, 32, 256])
+Average Execution Time: 97819.14 us
 --------------------

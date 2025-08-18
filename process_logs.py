@@ -3,7 +3,6 @@ import pandas as pd
 import os
 from collections import defaultdict
 
-
 def parse_log_file(file_path):
     """
     Parses a single log file to extract parameters and execution time.
@@ -16,7 +15,7 @@ def parse_log_file(file_path):
     """
     # Define regex to match parameters and execution time.
     param_regex = r"--- Test Parameters: B=(\d+), H=(\d+), T=(\d+), D=(\d+) ---"
-    # This regex now matches the English output format.
+    # This regex matches the English output format.
     time_regex = r"Average Execution Time:\s*([\d.]+) us"
     
     data = {}
@@ -51,20 +50,26 @@ def main():
     Main function to execute log parsing and Excel report generation.
     """
 
-    # Define file names
+    # Define file names for all three versions
     materialized_log = 'chunk.log'
     non_materialized_log = 'fused_chunk.log'
+    parallel_log = 'parallel.log' # <-- Added parallel log file
     output_excel_file = 'performance_report.xlsx'
 
-    # 1. Parse the two log files
+    # 1. Parse the three log files
     print(f"Parsing {materialized_log}...")
     materialized_data = parse_log_file(materialized_log)
     
     print(f"Parsing {non_materialized_log}...")
     non_materialized_data = parse_log_file(non_materialized_log)
+    
+    print(f"Parsing {parallel_log}...") # <-- Added parsing for parallel
+    parallel_data = parse_log_file(parallel_log)
 
-    if not materialized_data and not non_materialized_data:
-        print("Error: Both log files are empty or could not be parsed. Exiting.")
+    if not all([materialized_data, non_materialized_data, parallel_data]):
+        print("Warning: One or more log files might be empty or could not be parsed.")
+    if not any([materialized_data, non_materialized_data, parallel_data]):
+        print("Error: All log files are empty or could not be parsed. Exiting.")
         return
 
     # 2. Merge the data
@@ -82,12 +87,23 @@ def main():
     # Populate data for non-materialized (fused_chunk)
     for params, time in non_materialized_data.items():
         B, H, T, D = params
-        # If this configuration doesn't exist in the materialized data, create an entry for it.
+        # If this configuration doesn't exist, create an entry for it.
         if 'B' not in combined_data[params]:
              combined_data[params].update({
                 'B': B, 'H': H, 'S': T, 'D': D
             })
         combined_data[params]['non-materialized'] = time
+        
+    # Populate data for parallel, naming the column 'left-product' <-- MODIFIED SECTION
+    for params, time in parallel_data.items():
+        B, H, T, D = params
+        # If this configuration doesn't exist, create an entry for it.
+        if 'B' not in combined_data[params]:
+             combined_data[params].update({
+                'B': B, 'H': H, 'S': T, 'D': D
+            })
+        # Use the requested column name 'left-product'
+        combined_data[params]['left-product'] = time
         
     # 3. Convert the merged data into a Pandas DataFrame
     if not combined_data:
@@ -97,11 +113,12 @@ def main():
     df = pd.DataFrame(list(combined_data.values()))
     
     # Ensure the column order is correct and handle any missing data (fill with NaN).
-    final_columns = ['B', 'H', 'S', 'D', 'materialized', 'non-materialized']
+    # <-- Added 'left-product' to the column list
+    final_columns = ['B', 'H', 'S', 'D', 'materialized', 'non-materialized', 'left-product']
     df = df.reindex(columns=final_columns)
 
     # 4. Write to different Excel sheets based on the 'D' (Head Dimension) value
-    print(f"Generating Excel report: {output_excel_file}...")
+    print(f"\nGenerating Excel report: {output_excel_file}...")
     try:
         with pd.ExcelWriter(output_excel_file, engine='openpyxl') as writer:
             # Get all unique Head Dimension values

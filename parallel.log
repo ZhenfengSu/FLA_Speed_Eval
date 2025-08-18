@@ -1,10 +1,10 @@
-Benchmark results for version: chunk
-Test run on: 2025年 08月 16日 星期六 22:35:43 CST
+Benchmark results for version: parallel
+Test run on: 2025年 08月 17日 星期日 00:19:11 CST
 ----------------------------------------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 64]
@@ -21,12 +21,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 64])
-Average Execution Time: 325.91 us
+Average Execution Time: 237.85 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 96]
@@ -43,12 +43,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 96])
-Average Execution Time: 322.02 us
+Average Execution Time: 328.97 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 128]
@@ -65,12 +65,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 128])
-Average Execution Time: 330.21 us
+Average Execution Time: 335.66 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 160]
@@ -87,12 +87,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 160])
-Average Execution Time: 341.72 us
+Average Execution Time: 574.84 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 192]
@@ -109,12 +109,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 192])
-Average Execution Time: 353.44 us
+Average Execution Time: 576.45 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 4096, 256]
@@ -131,12 +131,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 256])
-Average Execution Time: 380.88 us
+Average Execution Time: 587.94 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 64]
@@ -153,12 +153,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 64])
-Average Execution Time: 370.98 us
+Average Execution Time: 530.55 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 96]
@@ -175,12 +175,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 96])
-Average Execution Time: 374.92 us
+Average Execution Time: 734.32 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 128]
@@ -197,12 +197,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 128])
-Average Execution Time: 393.96 us
+Average Execution Time: 754.58 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 160]
@@ -219,12 +219,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 160])
-Average Execution Time: 432.94 us
+Average Execution Time: 1714.74 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 192]
@@ -241,12 +241,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 192])
-Average Execution Time: 442.49 us
+Average Execution Time: 1719.57 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 8192, 256]
@@ -263,12 +263,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 256])
-Average Execution Time: 493.60 us
+Average Execution Time: 1718.07 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 64]
@@ -285,12 +285,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 64])
-Average Execution Time: 449.70 us
+Average Execution Time: 1312.33 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 96]
@@ -307,12 +307,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 96])
-Average Execution Time: 549.95 us
+Average Execution Time: 2079.17 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 128]
@@ -329,12 +329,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 128])
-Average Execution Time: 565.47 us
+Average Execution Time: 2191.38 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 160]
@@ -351,12 +351,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 160])
-Average Execution Time: 607.69 us
+Average Execution Time: 5501.42 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 192]
@@ -373,12 +373,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 192])
-Average Execution Time: 641.79 us
+Average Execution Time: 5502.80 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 16384, 256]
@@ -395,12 +395,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 256])
-Average Execution Time: 719.95 us
+Average Execution Time: 5561.60 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 64]
@@ -417,12 +417,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 64])
-Average Execution Time: 781.16 us
+Average Execution Time: 4091.40 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 96]
@@ -439,12 +439,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 96])
-Average Execution Time: 858.37 us
+Average Execution Time: 6301.73 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 128]
@@ -461,12 +461,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 128])
-Average Execution Time: 865.34 us
+Average Execution Time: 6728.75 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 160]
@@ -483,12 +483,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 160])
-Average Execution Time: 944.37 us
+Average Execution Time: 19889.28 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 192]
@@ -505,12 +505,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 192])
-Average Execution Time: 994.20 us
+Average Execution Time: 19996.65 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 32768, 256]
@@ -527,12 +527,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 256])
-Average Execution Time: 1118.76 us
+Average Execution Time: 20762.48 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 64]
@@ -549,12 +549,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 64])
-Average Execution Time: 1284.35 us
+Average Execution Time: 13399.01 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 96]
@@ -571,12 +571,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 96])
-Average Execution Time: 1409.45 us
+Average Execution Time: 21453.08 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 128]
@@ -593,12 +593,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 128])
-Average Execution Time: 1470.50 us
+Average Execution Time: 23219.27 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 160]
@@ -615,12 +615,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 160])
-Average Execution Time: 1590.23 us
+Average Execution Time: 79903.92 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 192]
@@ -637,12 +637,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 192])
-Average Execution Time: 1685.35 us
+Average Execution Time: 80208.32 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 65536, 256]
@@ -659,12 +659,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 256])
-Average Execution Time: 1997.27 us
+Average Execution Time: 83148.93 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 64]
@@ -681,12 +681,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 64])
-Average Execution Time: 2322.98 us
+Average Execution Time: 51394.52 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 96]
@@ -703,12 +703,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 96])
-Average Execution Time: 2544.38 us
+Average Execution Time: 82831.49 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 128]
@@ -725,12 +725,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 128])
-Average Execution Time: 2658.59 us
+Average Execution Time: 88834.23 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 160]
@@ -747,12 +747,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 160])
-Average Execution Time: 2927.58 us
+Average Execution Time: 319450.78 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 192]
@@ -769,12 +769,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 192])
-Average Execution Time: 3120.86 us
+Average Execution Time: 325152.92 us
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 2, 131072, 256]
@@ -791,12 +791,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 256])
-Average Execution Time: 3476.67 us
+Average Execution Time: 334286.58 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 64]
@@ -813,12 +813,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 64])
-Average Execution Time: 321.98 us
+Average Execution Time: 270.67 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 96]
@@ -835,12 +835,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 96])
-Average Execution Time: 331.44 us
+Average Execution Time: 382.07 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 128]
@@ -857,12 +857,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 128])
-Average Execution Time: 340.44 us
+Average Execution Time: 393.34 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 160]
@@ -879,12 +879,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 160])
-Average Execution Time: 361.78 us
+Average Execution Time: 927.74 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 192]
@@ -901,12 +901,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 192])
-Average Execution Time: 386.71 us
+Average Execution Time: 963.40 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 4096, 256]
@@ -923,12 +923,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 256])
-Average Execution Time: 414.06 us
+Average Execution Time: 924.75 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 64]
@@ -945,12 +945,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 64])
-Average Execution Time: 370.68 us
+Average Execution Time: 671.10 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 96]
@@ -967,12 +967,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 96])
-Average Execution Time: 442.38 us
+Average Execution Time: 1077.08 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 128]
@@ -989,12 +989,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 128])
-Average Execution Time: 449.58 us
+Average Execution Time: 1088.56 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 160]
@@ -1011,12 +1011,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 160])
-Average Execution Time: 475.40 us
+Average Execution Time: 2896.37 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 192]
@@ -1033,12 +1033,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 192])
-Average Execution Time: 517.67 us
+Average Execution Time: 2913.60 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 8192, 256]
@@ -1055,12 +1055,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 256])
-Average Execution Time: 553.55 us
+Average Execution Time: 2902.01 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 64]
@@ -1077,12 +1077,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 64])
-Average Execution Time: 566.63 us
+Average Execution Time: 2123.04 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 96]
@@ -1099,12 +1099,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 96])
-Average Execution Time: 601.68 us
+Average Execution Time: 3448.08 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 128]
@@ -1121,12 +1121,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 128])
-Average Execution Time: 599.60 us
+Average Execution Time: 3461.82 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 160]
@@ -1143,12 +1143,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 160])
-Average Execution Time: 707.80 us
+Average Execution Time: 10040.69 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 192]
@@ -1165,12 +1165,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 192])
-Average Execution Time: 766.77 us
+Average Execution Time: 10156.55 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 16384, 256]
@@ -1187,12 +1187,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 256])
-Average Execution Time: 863.39 us
+Average Execution Time: 10260.96 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 64]
@@ -1209,12 +1209,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 64])
-Average Execution Time: 855.45 us
+Average Execution Time: 6874.04 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 96]
@@ -1231,12 +1231,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 96])
-Average Execution Time: 938.73 us
+Average Execution Time: 11310.92 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 128]
@@ -1253,12 +1253,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 128])
-Average Execution Time: 1000.51 us
+Average Execution Time: 11534.13 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 160]
@@ -1275,12 +1275,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 160])
-Average Execution Time: 1085.04 us
+Average Execution Time: 38678.95 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 192]
@@ -1297,12 +1297,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 192])
-Average Execution Time: 1252.70 us
+Average Execution Time: 39414.70 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 32768, 256]
@@ -1319,12 +1319,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 256])
-Average Execution Time: 1450.31 us
+Average Execution Time: 40516.31 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 64]
@@ -1341,12 +1341,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 64])
-Average Execution Time: 1436.10 us
+Average Execution Time: 25558.59 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 96]
@@ -1363,12 +1363,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 96])
-Average Execution Time: 1590.81 us
+Average Execution Time: 42314.04 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 128]
@@ -1385,12 +1385,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 128])
-Average Execution Time: 1730.10 us
+Average Execution Time: 43277.79 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 160]
@@ -1407,12 +1407,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 160])
-Average Execution Time: 1936.83 us
+Average Execution Time: 157887.54 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 192]
@@ -1429,12 +1429,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 192])
-Average Execution Time: 2194.99 us
+Average Execution Time: 160506.91 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 65536, 256]
@@ -1451,12 +1451,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 256])
-Average Execution Time: 2660.16 us
+Average Execution Time: 164390.49 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 64]
@@ -1473,12 +1473,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 64])
-Average Execution Time: 2560.17 us
+Average Execution Time: 101074.02 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 96]
@@ -1495,12 +1495,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 96])
-Average Execution Time: 2892.98 us
+Average Execution Time: 166785.16 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 128]
@@ -1517,12 +1517,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 128])
-Average Execution Time: 3136.29 us
+Average Execution Time: 170319.73 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 160]
@@ -1539,12 +1539,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 160])
-Average Execution Time: 3537.37 us
+Average Execution Time: 641181.07 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 192]
@@ -1561,12 +1561,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 192])
-Average Execution Time: 4035.38 us
+Average Execution Time: 649151.03 us
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 4, 131072, 256]
@@ -1583,12 +1583,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 256])
-Average Execution Time: 5109.08 us
+Average Execution Time: 666011.29 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 64]
@@ -1605,12 +1605,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 64])
-Average Execution Time: 331.09 us
+Average Execution Time: 365.21 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 96]
@@ -1627,12 +1627,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 96])
-Average Execution Time: 375.61 us
+Average Execution Time: 628.53 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 128]
@@ -1649,12 +1649,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 128])
-Average Execution Time: 394.03 us
+Average Execution Time: 558.64 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 160]
@@ -1671,12 +1671,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 160])
-Average Execution Time: 430.15 us
+Average Execution Time: 1606.11 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 192]
@@ -1693,12 +1693,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 192])
-Average Execution Time: 449.87 us
+Average Execution Time: 1625.76 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 4096, 256]
@@ -1715,12 +1715,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 256])
-Average Execution Time: 529.82 us
+Average Execution Time: 1558.66 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 64]
@@ -1737,12 +1737,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 64])
-Average Execution Time: 445.37 us
+Average Execution Time: 1091.01 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 96]
@@ -1759,12 +1759,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 96])
-Average Execution Time: 481.07 us
+Average Execution Time: 1734.68 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 128]
@@ -1781,12 +1781,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 128])
-Average Execution Time: 513.24 us
+Average Execution Time: 1762.11 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 160]
@@ -1803,12 +1803,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 160])
-Average Execution Time: 569.24 us
+Average Execution Time: 5202.98 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 192]
@@ -1825,12 +1825,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 192])
-Average Execution Time: 628.54 us
+Average Execution Time: 5272.51 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 8192, 256]
@@ -1847,12 +1847,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 256])
-Average Execution Time: 736.26 us
+Average Execution Time: 5394.14 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 64]
@@ -1869,12 +1869,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 64])
-Average Execution Time: 604.49 us
+Average Execution Time: 3515.62 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 96]
@@ -1891,12 +1891,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 96])
-Average Execution Time: 686.62 us
+Average Execution Time: 5689.29 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 128]
@@ -1913,12 +1913,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 128])
-Average Execution Time: 776.76 us
+Average Execution Time: 5689.95 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 160]
@@ -1935,12 +1935,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 160])
-Average Execution Time: 891.21 us
+Average Execution Time: 19429.72 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 192]
@@ -1957,12 +1957,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 192])
-Average Execution Time: 984.92 us
+Average Execution Time: 19641.79 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 16384, 256]
@@ -1979,12 +1979,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 256])
-Average Execution Time: 1191.40 us
+Average Execution Time: 20193.87 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 64]
@@ -2001,12 +2001,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 64])
-Average Execution Time: 974.61 us
+Average Execution Time: 12929.80 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 96]
@@ -2023,12 +2023,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 96])
-Average Execution Time: 1116.44 us
+Average Execution Time: 20989.41 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 128]
@@ -2045,12 +2045,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 128])
-Average Execution Time: 1248.08 us
+Average Execution Time: 21139.66 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 160]
@@ -2067,12 +2067,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 160])
-Average Execution Time: 1522.97 us
+Average Execution Time: 77312.55 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 192]
@@ -2089,12 +2089,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 192])
-Average Execution Time: 1702.17 us
+Average Execution Time: 78358.71 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 32768, 256]
@@ -2111,12 +2111,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 256])
-Average Execution Time: 2170.00 us
+Average Execution Time: 80786.15 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 64]
@@ -2133,12 +2133,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 64])
-Average Execution Time: 1636.42 us
+Average Execution Time: 50284.26 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 96]
@@ -2155,12 +2155,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 96])
-Average Execution Time: 1941.26 us
+Average Execution Time: 82502.55 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 128]
@@ -2177,12 +2177,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 128])
-Average Execution Time: 2188.84 us
+Average Execution Time: 83692.19 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 160]
@@ -2199,12 +2199,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 160])
-Average Execution Time: 2793.82 us
+Average Execution Time: 317735.51 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 192]
@@ -2221,12 +2221,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 192])
-Average Execution Time: 3160.87 us
+Average Execution Time: 321373.96 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 65536, 256]
@@ -2243,12 +2243,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 256])
-Average Execution Time: 4295.28 us
+Average Execution Time: 331527.02 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 64]
@@ -2265,12 +2265,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 64])
-Average Execution Time: 2993.39 us
+Average Execution Time: 203074.19 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 96]
@@ -2287,12 +2287,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 96])
-Average Execution Time: 3555.41 us
+Average Execution Time: 331738.55 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 128]
@@ -2309,12 +2309,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 128])
-Average Execution Time: 4075.98 us
+Average Execution Time: 338684.72 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 160]
@@ -2331,12 +2331,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 160])
-Average Execution Time: 5287.13 us
+Average Execution Time: 1283219.60 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 192]
@@ -2353,12 +2353,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 192])
-Average Execution Time: 6226.44 us
+Average Execution Time: 1303456.85 us
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 8, 131072, 256]
@@ -2375,12 +2375,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 256])
-Average Execution Time: 7941.34 us
+Average Execution Time: 1339141.47 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 64]
@@ -2397,12 +2397,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 64])
-Average Execution Time: 371.83 us
+Average Execution Time: 484.44 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 96]
@@ -2419,12 +2419,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 96])
-Average Execution Time: 396.15 us
+Average Execution Time: 768.76 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 128]
@@ -2441,12 +2441,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 128])
-Average Execution Time: 417.25 us
+Average Execution Time: 782.29 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 160]
@@ -2463,12 +2463,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 160])
-Average Execution Time: 519.58 us
+Average Execution Time: 2568.61 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 192]
@@ -2485,12 +2485,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 192])
-Average Execution Time: 513.67 us
+Average Execution Time: 2173.45 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 4096, 256]
@@ -2507,12 +2507,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 256])
-Average Execution Time: 606.81 us
+Average Execution Time: 2262.03 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 64]
@@ -2529,12 +2529,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 64])
-Average Execution Time: 503.38 us
+Average Execution Time: 1463.55 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 96]
@@ -2551,12 +2551,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 96])
-Average Execution Time: 525.71 us
+Average Execution Time: 2325.15 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 128]
@@ -2573,12 +2573,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 128])
-Average Execution Time: 572.98 us
+Average Execution Time: 2383.64 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 160]
@@ -2595,12 +2595,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 160])
-Average Execution Time: 682.52 us
+Average Execution Time: 7585.30 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 192]
@@ -2617,12 +2617,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 192])
-Average Execution Time: 738.83 us
+Average Execution Time: 7711.83 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 8192, 256]
@@ -2639,12 +2639,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 256])
-Average Execution Time: 948.31 us
+Average Execution Time: 8098.53 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 64]
@@ -2661,12 +2661,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 64])
-Average Execution Time: 657.64 us
+Average Execution Time: 5019.13 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 96]
@@ -2683,12 +2683,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 96])
-Average Execution Time: 781.06 us
+Average Execution Time: 8196.93 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 128]
@@ -2705,12 +2705,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 128])
-Average Execution Time: 882.35 us
+Average Execution Time: 8368.52 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 160]
@@ -2727,12 +2727,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 160])
-Average Execution Time: 1137.19 us
+Average Execution Time: 28743.02 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 192]
@@ -2749,12 +2749,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 192])
-Average Execution Time: 1221.64 us
+Average Execution Time: 29210.31 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 16384, 256]
@@ -2771,12 +2771,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 256])
-Average Execution Time: 1602.38 us
+Average Execution Time: 30509.86 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 64]
@@ -2793,12 +2793,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 64])
-Average Execution Time: 1051.22 us
+Average Execution Time: 19078.94 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 96]
@@ -2815,12 +2815,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 96])
-Average Execution Time: 1290.57 us
+Average Execution Time: 30996.07 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 128]
@@ -2837,12 +2837,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 128])
-Average Execution Time: 1503.30 us
+Average Execution Time: 32124.34 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 160]
@@ -2859,12 +2859,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 160])
-Average Execution Time: 1982.60 us
+Average Execution Time: 115857.03 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 192]
@@ -2881,12 +2881,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 192])
-Average Execution Time: 2190.92 us
+Average Execution Time: 117360.34 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 32768, 256]
@@ -2903,12 +2903,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 256])
-Average Execution Time: 3026.40 us
+Average Execution Time: 122379.15 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 64]
@@ -2925,12 +2925,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 64])
-Average Execution Time: 1870.22 us
+Average Execution Time: 75649.47 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 96]
@@ -2947,12 +2947,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 96])
-Average Execution Time: 2291.97 us
+Average Execution Time: 123018.58 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 128]
@@ -2969,12 +2969,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 128])
-Average Execution Time: 2708.83 us
+Average Execution Time: 127434.30 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 160]
@@ -2991,12 +2991,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 160])
-Average Execution Time: 3789.20 us
+Average Execution Time: 474046.29 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 192]
@@ -3013,12 +3013,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 192])
-Average Execution Time: 4149.20 us
+Average Execution Time: 481534.15 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 65536, 256]
@@ -3035,12 +3035,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 256])
-Average Execution Time: 5770.87 us
+Average Execution Time: 501770.30 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 64]
@@ -3057,12 +3057,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 64])
-Average Execution Time: 3396.44 us
+Average Execution Time: 304741.34 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 96]
@@ -3079,12 +3079,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 96])
-Average Execution Time: 4320.24 us
+Average Execution Time: 495696.90 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 128]
@@ -3101,12 +3101,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 128])
-Average Execution Time: 5140.08 us
+Average Execution Time: 512608.13 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 160]
@@ -3123,12 +3123,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 160])
-Average Execution Time: 7406.10 us
+Average Execution Time: 1919326.48 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 192]
@@ -3145,12 +3145,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 192])
-Average Execution Time: 8071.53 us
+Average Execution Time: 1948402.72 us
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 12, 131072, 256]
@@ -3167,12 +3167,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 256])
-Average Execution Time: 11434.80 us
+Average Execution Time: 2030659.05 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 64]
@@ -3189,12 +3189,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 64])
-Average Execution Time: 384.44 us
+Average Execution Time: 580.55 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 96]
@@ -3211,12 +3211,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 96])
-Average Execution Time: 439.38 us
+Average Execution Time: 913.09 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 128]
@@ -3233,12 +3233,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 128])
-Average Execution Time: 445.61 us
+Average Execution Time: 957.49 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 160]
@@ -3255,12 +3255,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 160])
-Average Execution Time: 530.50 us
+Average Execution Time: 2815.36 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 192]
@@ -3277,12 +3277,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 192])
-Average Execution Time: 581.09 us
+Average Execution Time: 2948.10 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 4096, 256]
@@ -3299,12 +3299,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 256])
-Average Execution Time: 702.40 us
+Average Execution Time: 2923.34 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 64]
@@ -3321,12 +3321,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 64])
-Average Execution Time: 475.27 us
+Average Execution Time: 1861.37 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 96]
@@ -3343,12 +3343,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 96])
-Average Execution Time: 574.24 us
+Average Execution Time: 2954.55 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 128]
@@ -3365,12 +3365,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 128])
-Average Execution Time: 643.50 us
+Average Execution Time: 2970.05 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 160]
@@ -3387,12 +3387,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 160])
-Average Execution Time: 776.49 us
+Average Execution Time: 10005.49 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 192]
@@ -3409,12 +3409,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 192])
-Average Execution Time: 891.14 us
+Average Execution Time: 10274.77 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 8192, 256]
@@ -3431,12 +3431,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 256])
-Average Execution Time: 1103.44 us
+Average Execution Time: 10483.42 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 64]
@@ -3453,12 +3453,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 64])
-Average Execution Time: 701.44 us
+Average Execution Time: 6636.56 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 96]
@@ -3475,12 +3475,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 96])
-Average Execution Time: 884.31 us
+Average Execution Time: 10677.35 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 128]
@@ -3497,12 +3497,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 128])
-Average Execution Time: 999.14 us
+Average Execution Time: 10775.55 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 160]
@@ -3519,12 +3519,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 160])
-Average Execution Time: 1288.51 us
+Average Execution Time: 38524.68 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 192]
@@ -3541,12 +3541,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 192])
-Average Execution Time: 1517.98 us
+Average Execution Time: 39017.11 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 16384, 256]
@@ -3563,12 +3563,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 256])
-Average Execution Time: 1988.67 us
+Average Execution Time: 40265.71 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 64]
@@ -3585,12 +3585,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 64])
-Average Execution Time: 1168.33 us
+Average Execution Time: 25394.56 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 96]
@@ -3607,12 +3607,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 96])
-Average Execution Time: 1520.51 us
+Average Execution Time: 41273.85 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 128]
@@ -3629,12 +3629,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 128])
-Average Execution Time: 1775.47 us
+Average Execution Time: 41665.25 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 160]
@@ -3651,12 +3651,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 160])
-Average Execution Time: 2376.48 us
+Average Execution Time: 155165.55 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 192]
@@ -3673,12 +3673,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 192])
-Average Execution Time: 2804.55 us
+Average Execution Time: 158134.34 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 32768, 256]
@@ -3695,12 +3695,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 256])
-Average Execution Time: 3780.17 us
+Average Execution Time: 161935.93 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 64]
@@ -3717,12 +3717,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 64])
-Average Execution Time: 2035.33 us
+Average Execution Time: 101657.52 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 96]
@@ -3739,12 +3739,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 96])
-Average Execution Time: 2754.34 us
+Average Execution Time: 165224.52 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 128]
@@ -3761,12 +3761,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 128])
-Average Execution Time: 3294.36 us
+Average Execution Time: 166871.64 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 160]
@@ -3783,12 +3783,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 160])
-Average Execution Time: 4689.27 us
+Average Execution Time: 636044.25 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 192]
@@ -3805,12 +3805,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 192])
-Average Execution Time: 5335.30 us
+Average Execution Time: 646534.40 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 65536, 256]
@@ -3827,12 +3827,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 256])
-Average Execution Time: 7380.90 us
+Average Execution Time: 662986.78 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 64]
@@ -3849,12 +3849,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 64])
-Average Execution Time: 3744.47 us
+Average Execution Time: 413197.91 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 96]
@@ -3871,12 +3871,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 96])
-Average Execution Time: 5240.44 us
+Average Execution Time: 666479.20 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 128]
@@ -3893,12 +3893,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 128])
-Average Execution Time: 6375.46 us
+Average Execution Time: 676630.13 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 160]
@@ -3915,12 +3915,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 160])
-Average Execution Time: 9234.54 us
+Average Execution Time: 2598612.35 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 192]
@@ -3937,12 +3937,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 192])
-Average Execution Time: 10362.18 us
+Average Execution Time: 2636513.00 us
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 16, 131072, 256]
@@ -3959,12 +3959,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 256])
-Average Execution Time: 15071.18 us
+Average Execution Time: 2714377.46 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 64]
@@ -3981,12 +3981,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 64])
-Average Execution Time: 429.80 us
+Average Execution Time: 990.59 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 96]
@@ -4003,12 +4003,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 96])
-Average Execution Time: 525.02 us
+Average Execution Time: 1566.87 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 128]
@@ -4025,12 +4025,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 128])
-Average Execution Time: 588.00 us
+Average Execution Time: 1643.60 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 160]
@@ -4047,12 +4047,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 160])
-Average Execution Time: 762.87 us
+Average Execution Time: 5340.64 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 192]
@@ -4069,12 +4069,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 192])
-Average Execution Time: 816.41 us
+Average Execution Time: 5488.99 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 4096, 256]
@@ -4091,12 +4091,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 256])
-Average Execution Time: 1118.67 us
+Average Execution Time: 5633.75 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 64]
@@ -4113,12 +4113,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 64])
-Average Execution Time: 594.24 us
+Average Execution Time: 3401.91 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 96]
@@ -4135,12 +4135,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 96])
-Average Execution Time: 771.68 us
+Average Execution Time: 5432.52 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 128]
@@ -4157,12 +4157,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 128])
-Average Execution Time: 917.02 us
+Average Execution Time: 5556.93 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 160]
@@ -4179,12 +4179,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 160])
-Average Execution Time: 1254.99 us
+Average Execution Time: 19710.21 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 192]
@@ -4201,12 +4201,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 192])
-Average Execution Time: 1427.31 us
+Average Execution Time: 20303.67 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 8192, 256]
@@ -4223,12 +4223,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 256])
-Average Execution Time: 1958.96 us
+Average Execution Time: 20859.35 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 64]
@@ -4245,12 +4245,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 64])
-Average Execution Time: 923.66 us
+Average Execution Time: 12792.33 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 96]
@@ -4267,12 +4267,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 96])
-Average Execution Time: 1280.27 us
+Average Execution Time: 20620.71 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 128]
@@ -4289,12 +4289,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 128])
-Average Execution Time: 1594.38 us
+Average Execution Time: 20809.97 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 160]
@@ -4311,12 +4311,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 160])
-Average Execution Time: 2433.21 us
+Average Execution Time: 77468.09 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 192]
@@ -4333,12 +4333,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 192])
-Average Execution Time: 2595.94 us
+Average Execution Time: 78114.35 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 16384, 256]
@@ -4355,12 +4355,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 256])
-Average Execution Time: 3785.54 us
+Average Execution Time: 80504.32 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 64]
@@ -4377,12 +4377,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 64])
-Average Execution Time: 1613.89 us
+Average Execution Time: 50399.38 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 96]
@@ -4399,12 +4399,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 96])
-Average Execution Time: 2346.95 us
+Average Execution Time: 81834.47 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 128]
@@ -4421,12 +4421,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 128])
-Average Execution Time: 2866.77 us
+Average Execution Time: 82420.86 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 160]
@@ -4443,12 +4443,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 160])
-Average Execution Time: 4473.28 us
+Average Execution Time: 312171.60 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 192]
@@ -4465,12 +4465,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 192])
-Average Execution Time: 5021.31 us
+Average Execution Time: 316734.80 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 32768, 256]
@@ -4487,12 +4487,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 256])
-Average Execution Time: 7539.27 us
+Average Execution Time: 325487.47 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 64]
@@ -4509,12 +4509,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 64])
-Average Execution Time: 2890.66 us
+Average Execution Time: 204722.60 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 96]
@@ -4531,12 +4531,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 96])
-Average Execution Time: 4535.27 us
+Average Execution Time: 329716.11 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 128]
@@ -4553,12 +4553,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 128])
-Average Execution Time: 5574.87 us
+Average Execution Time: 332628.20 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 160]
@@ -4575,12 +4575,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 160])
-Average Execution Time: 8891.48 us
+Average Execution Time: 1280131.73 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 192]
@@ -4597,12 +4597,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 192])
-Average Execution Time: 9917.87 us
+Average Execution Time: 1301907.38 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 65536, 256]
@@ -4619,12 +4619,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 256])
-Average Execution Time: 15175.02 us
+Average Execution Time: 1336957.26 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=64 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 64]
@@ -4641,12 +4641,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 64])
-Average Execution Time: 5437.30 us
+Average Execution Time: 829989.70 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=96 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 96]
@@ -4663,12 +4663,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 96])
-Average Execution Time: 8954.81 us
+Average Execution Time: 1335719.64 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=128 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 128]
@@ -4685,12 +4685,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 128])
-Average Execution Time: 10897.58 us
+Average Execution Time: 1363793.03 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=160 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 160]
@@ -4707,12 +4707,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 160])
-Average Execution Time: 17810.14 us
+Average Execution Time: 5199212.25 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=192 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 192]
@@ -4729,12 +4729,12 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 192])
-Average Execution Time: 19686.39 us
+Average Execution Time: 5289036.31 us
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=256 ---
 ---- Configuration ----
-Version to Test: chunk
+Version to Test: parallel
 Device: cuda
 Data Type: torch.bfloat16
 Input Shape (q, k, v): [B, H, T, D] = [1, 32, 131072, 256]
@@ -4751,5 +4751,5 @@ Timing complete.
 
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 256])
-Average Execution Time: 31007.77 us
+Average Execution Time: 5362890.85 us
 --------------------
