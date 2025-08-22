@@ -7,8 +7,7 @@ from fla.ops.simple_gla.parallel import parallel_simple_gla
 
 def run_benchmark(version, B, H, T, D, warmup_runs, num_runs):
     """
-    Tests the performance of a specified version and shape of simple_gla 
-    using a for loop and warm-up, and calculates the average time.
+    Tests the performance and memory usage of a specified version and shape of simple_gla.
 
     Args:
         version (str): The version of simple_gla to test ('chunk', 'fused_chunk', 'parallel').
@@ -41,84 +40,88 @@ def run_benchmark(version, B, H, T, D, warmup_runs, num_runs):
     print(f"Version to Test: {version}")
     print(f"Device: {device}")
     print(f"Data Type: {dtype}")
-    print(f"Input Shape (q, k, v): [B, H, T, D] = [{B}, {H}, {T}, {D}]")
-    print(f"Input Shape (g): [B, T, H] = [{B}, {T}, {H}]") # Note the shape of g
+    print(f"Input Shape (q, k, v): [B, T, H, D] = [{B}, {T}, {H}, {D}]")
+    print(f"Input Shape (g): [B, T, H] = [{B}, {T}, {H}]")
     print(f"Warm-up Runs: {warmup_runs}")
     print(f"Timed Runs: {num_runs}")
     print("--------------------")
 
     # 2. Prepare Input Tensors
     with torch.no_grad():
-        X_mamba = 0.1 * torch.randn(B, T, H, D, dtype=dtype, device=device)
-        dt_mamba = torch.ones(B, T, H, dtype=dtype, device=device)
-        A_mamba = -0.1 * torch.rand(H, dtype=dtype, device=device)
-        B_mamba = 0.1 * torch.randn(B, T, H, D, dtype=dtype, device=device)
-        C_mamba = 0.1 * torch.randn(B, T, H, D, dtype=dtype, device=device)
+        q = torch.randn(B, T, H, D, dtype=dtype, device=device)
+        k = torch.randn(B, T, H, D, dtype=dtype, device=device)
+        v = torch.randn(B, T, H, D, dtype=dtype, device=device)
+        # Note: g has a different shape layout
+        g = torch.randn(B, T, H, dtype=dtype, device=device)
 
-        q = C_mamba.contiguous()
-        k = B_mamba.contiguous()
-        v = X_mamba.contiguous()
-        g = (A_mamba * dt_mamba).contiguous()
+    # 3. Warm-up
+    print("\nStarting warm-up...")
+    for _ in range(warmup_runs):
+        if version in ['chunk', 'fused_chunk']:
+            _ = target_func(q, k, v, g, scale=1.0, output_final_state=final_state)
+        else:
+            _ = target_func(q, k, v, g)
+    if device == 'cuda':
+        torch.cuda.synchronize()
+    print("Warm-up complete.")
+
+    # 4. Performance Test and Timing
+    print(f"\nStarting timer for {num_runs} runs...")
+    start_time = time.perf_counter()
+    for _ in range(num_runs):
+        if version in ['chunk', 'fused_chunk']:
+            _ = target_func(q, k, v, g, scale=1.0, output_final_state=final_state)
+        else:
+            _ = target_func(q, k, v, g)
+    if device == 'cuda':
+        torch.cuda.synchronize()
+    end_time = time.perf_counter()
+    print("Timing complete.")
+
+    total_time_s = end_time - start_time
+    avg_time_us = (total_time_s / num_runs) * 1_000_000
+
+    # 5. Memory Usage Test (only on CUDA)
+    peak_memory_mb = 0
+    if device == 'cuda':
+        print("\nMeasuring peak memory usage...")
+        # Reset peak memory stats before the run
+        torch.cuda.reset_peak_memory_stats(device=device)
         
-        # Note: parallel_simple_gla requires different input shapes
-        # if version == 'parallel':
-        #     q = q.transpose(1, 2) # [B, T, H, D] -> [B, H, T, D]
-        #     k = k.transpose(1, 2) # [B, T, H, D] -> [B, H, T, D]
-        #     v = v.transpose(1, 2) # [B, T, H, D] -> [B, H, T, D]
-        #     # g for parallel is [B, H, T]
-        #     g = g.transpose(1, 2)
-        #     print("Note: Input tensors for 'parallel' version have been transposed to [B, H, T, D] layout.")
-
-
-        # 3. Warm-up
-        print("\nStarting warm-up...")
-        for _ in range(warmup_runs):
-            # Pass arguments according to the function signature
-            if version in ['chunk', 'fused_chunk']:
-                _ = target_func(q, k, v, g, scale=1.0, output_final_state=final_state)
-            else: # parallel
-                _ = target_func(q, k, v, g)
-        
-        if device == 'cuda':
-            torch.cuda.synchronize()
-        print("Warm-up complete.")
-
-        # 4. Performance Test and Timing
-        print(f"\nStarting timer for {num_runs} runs...")
-        start_time = time.perf_counter()
-
-        for _ in range(num_runs):
-            if version in ['chunk', 'fused_chunk']:
-                _ = target_func(q, k, v, g, scale=1.0, output_final_state=final_state)
-            else: # parallel
-                _ = target_func(q, k, v, g)
-        
-        if device == 'cuda':
-            torch.cuda.synchronize()
-        end_time = time.perf_counter()
-        print("Timing complete.")
-
-        # 5. Result Calculation and Output
-        total_time_s = end_time - start_time
-        avg_time_s = total_time_s / num_runs
-        avg_time_us = avg_time_s * 1_000_000
-
-        # Run once to get the output shape
+        # Run the function once to measure its peak memory
         if version in ['chunk', 'fused_chunk']:
             output = target_func(q, k, v, g, scale=1.0, output_final_state=final_state)
-        else: # parallel
+        else:
             output = target_func(q, k, v, g)
         
-        # Handle the case where the return value might be a tuple
-        if isinstance(output, tuple):
-            output_tensor = output[0]
+        # Synchronize to ensure the operation is complete
+        torch.cuda.synchronize(device=device)
+        
+        # Get the peak memory allocated in bytes and convert to megabytes
+        peak_memory_bytes = torch.cuda.max_memory_allocated(device=device)
+        peak_memory_mb = peak_memory_bytes / (1024 * 1024)
+        print("Memory measurement complete.")
+    else:
+        # If not on CUDA, just run once to get the output shape
+        if version in ['chunk', 'fused_chunk']:
+            output = target_func(q, k, v, g, scale=1.0, output_final_state=final_state)
         else:
-            output_tensor = output
+            output = target_func(q, k, v, g)
 
-        print("\n---- Benchmark Results ----")
-        print(f"Output Shape: {output_tensor.shape}")
-        print(f"Average Execution Time: {avg_time_us:.2f} us")
-        print("--------------------")
+    # Handle tuple output to get the tensor for shape checking
+    if isinstance(output, tuple):
+        output_tensor = output[0]
+    else:
+        output_tensor = output
+
+    # 6. Final Results Output
+    print("\n---- Benchmark Results ----")
+    print(f"Output Shape: {output_tensor.shape}")
+    print(f"Average Execution Time: {avg_time_us:.2f} us")
+    if device == 'cuda':
+        # Add the new memory metric to the final output
+        print(f"Peak Memory Usage: {peak_memory_mb:.2f} MB")
+    print("--------------------")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Benchmark different versions and shapes of simple_gla.")

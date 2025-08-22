@@ -3,20 +3,22 @@ import pandas as pd
 import os
 from collections import defaultdict
 
+
 def parse_log_file(file_path):
     """
-    Parses a single log file to extract parameters and execution time.
+    Parses a single log file to extract parameters, execution time, and memory usage.
     
     Args:
         file_path (str): The path to the log file.
 
     Returns:
-        dict: A dictionary where keys are parameter tuples (B, H, T, D) and values are the execution times.
+        dict: A dictionary where keys are parameter tuples (B, H, T, D) 
+              and values are dictionaries containing 'time' and 'memory'.
     """
-    # Define regex to match parameters and execution time.
+    # Define regex to match parameters, time, and memory.
     param_regex = r"--- Test Parameters: B=(\d+), H=(\d+), T=(\d+), D=(\d+) ---"
-    # This regex matches the English output format.
     time_regex = r"Average Execution Time:\s*([\d.]+) us"
+    mem_regex = r"Peak Memory Usage:\s*([\d.]+) MB"
     
     data = {}
     if not os.path.exists(file_path):
@@ -26,112 +28,93 @@ def parse_log_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
         
-    # Split the content into test blocks based on the '--- Test Parameters:' separator.
+    # Split the content into test blocks.
     test_blocks = content.split('--- Test Parameters:')[1:]
     
     for block in test_blocks:
-        # Re-assemble the full block text for matching.
         full_block_text = "--- Test Parameters:" + block
         param_match = re.search(param_regex, full_block_text)
         time_match = re.search(time_regex, full_block_text)
+        mem_match = re.search(mem_regex, full_block_text) # Try to find memory usage
         
         if param_match and time_match:
-            # Extract parameters and convert to integers.
             params = tuple(map(int, param_match.groups()))
-            # Extract time and convert to a float.
             time = float(time_match.group(1))
-            data[params] = time
+            # Handle cases where memory usage might not be in the log
+            memory = float(mem_match.group(1)) if mem_match else None
+            
+            data[params] = {'time': time, 'memory': memory}
             
     return data
 
 
 def main():
     """
-    Main function to execute log parsing and Excel report generation.
+    Main function to execute log parsing and generate a comprehensive Excel report.
     """
+    # --- Uncomment the line below to generate dummy files for testing ---
+    # create_dummy_logs()
 
-    # Define file names for all three versions
-    materialized_log = 'chunk.log'
-    non_materialized_log = 'fused_chunk.log'
-    parallel_log = 'parallel.log' # <-- Added parallel log file
+    # Configuration for log files and their corresponding column names in the report
+    log_configs = {
+        'materialized': 'chunk.log',
+        'non-materialized': 'fused_chunk.log',
+        'left-product': 'parallel.log'
+    }
     output_excel_file = 'performance_report.xlsx'
 
-    # 1. Parse the three log files
-    print(f"Parsing {materialized_log}...")
-    materialized_data = parse_log_file(materialized_log)
-    
-    print(f"Parsing {non_materialized_log}...")
-    non_materialized_data = parse_log_file(non_materialized_log)
-    
-    print(f"Parsing {parallel_log}...") # <-- Added parsing for parallel
-    parallel_data = parse_log_file(parallel_log)
+    # 1. Parse all configured log files
+    all_parsed_data = {}
+    for name, log_file in log_configs.items():
+        print(f"Parsing {log_file} for '{name}' data...")
+        all_parsed_data[name] = parse_log_file(log_file)
 
-    if not all([materialized_data, non_materialized_data, parallel_data]):
-        print("Warning: One or more log files might be empty or could not be parsed.")
-    if not any([materialized_data, non_materialized_data, parallel_data]):
-        print("Error: All log files are empty or could not be parsed. Exiting.")
-        return
-
-    # 2. Merge the data
-    # Using defaultdict simplifies the code; it returns an empty dictionary for a new key.
+    # 2. Merge data from all sources
     combined_data = defaultdict(dict)
-
-    # Populate data for materialized (chunk)
-    for params, time in materialized_data.items():
-        B, H, T, D = params
-        combined_data[params].update({
-            'B': B, 'H': H, 'S': T, 'D': D, # Note: T is renamed to S
-            'materialized': time
-        })
-
-    # Populate data for non-materialized (fused_chunk)
-    for params, time in non_materialized_data.items():
-        B, H, T, D = params
-        # If this configuration doesn't exist, create an entry for it.
-        if 'B' not in combined_data[params]:
-             combined_data[params].update({
-                'B': B, 'H': H, 'S': T, 'D': D
-            })
-        combined_data[params]['non-materialized'] = time
-        
-    # Populate data for parallel, naming the column 'left-product' <-- MODIFIED SECTION
-    for params, time in parallel_data.items():
-        B, H, T, D = params
-        # If this configuration doesn't exist, create an entry for it.
-        if 'B' not in combined_data[params]:
-             combined_data[params].update({
-                'B': B, 'H': H, 'S': T, 'D': D
-            })
-        # Use the requested column name 'left-product'
-        combined_data[params]['left-product'] = time
-        
+    
+    for name, parsed_data in all_parsed_data.items():
+        if not parsed_data:
+            print(f"No data found for '{name}'.")
+            continue
+            
+        for params, metrics in parsed_data.items():
+            B, H, T, D = params
+            # Ensure the base parameter info is set
+            if 'B' not in combined_data[params]:
+                combined_data[params].update({'B': B, 'H': H, 'S': T, 'D': D})
+            
+            # Add the time and memory metrics with descriptive names
+            combined_data[params][f'{name}_us'] = metrics.get('time')
+            combined_data[params][f'{name}_mem_mb'] = metrics.get('memory')
+            
     # 3. Convert the merged data into a Pandas DataFrame
     if not combined_data:
-        print("Could not parse any valid data from the log files.")
+        print("Error: Could not parse any valid data from the log files. Exiting.")
         return
         
     df = pd.DataFrame(list(combined_data.values()))
     
-    # Ensure the column order is correct and handle any missing data (fill with NaN).
-    # <-- Added 'left-product' to the column list
-    final_columns = ['B', 'H', 'S', 'D', 'materialized', 'non-materialized', 'left-product']
+    # Define the final column order dynamically
+    base_columns = ['B', 'H', 'S', 'D']
+    metric_columns = []
+    for name in log_configs.keys():
+        metric_columns.append(f'{name}_us')
+        metric_columns.append(f'{name}_mem_mb')
+        
+    final_columns = base_columns + metric_columns
     df = df.reindex(columns=final_columns)
 
     # 4. Write to different Excel sheets based on the 'D' (Head Dimension) value
     print(f"\nGenerating Excel report: {output_excel_file}...")
     try:
         with pd.ExcelWriter(output_excel_file, engine='openpyxl') as writer:
-            # Get all unique Head Dimension values
             head_dims = sorted(df['D'].unique())
             
             for dim in head_dims:
                 sheet_name = f'HeadDim={dim}'
                 print(f"  - Writing to Sheet: {sheet_name}")
                 
-                # Filter the data for the current dimension
                 df_sheet = df[df['D'] == dim].copy()
-                
-                # Write the data to the corresponding sheet without the pandas index column
                 df_sheet.to_excel(writer, sheet_name=sheet_name, index=False)
         
         print(f"\nReport generated successfully! File saved as: {output_excel_file}")
