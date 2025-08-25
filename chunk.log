@@ -1,5 +1,5 @@
 Benchmark results for version: chunk
-Test run on: 2025年 08月 16日 星期六 22:35:43 CST
+Test run on: 2025年 08月 22日 星期五 14:10:32 CST
 ----------------------------------------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=64 ---
@@ -19,9 +19,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 64])
-Average Execution Time: 325.91 us
+Average Execution Time: 340.34 us
+Peak Memory Usage: 6.05 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=96 ---
@@ -41,9 +45,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 96])
-Average Execution Time: 322.02 us
+Average Execution Time: 368.58 us
+Peak Memory Usage: 9.80 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=128 ---
@@ -63,9 +71,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 128])
-Average Execution Time: 330.21 us
+Average Execution Time: 783.93 us
+Peak Memory Usage: 14.05 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=160 ---
@@ -85,9 +97,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 160])
-Average Execution Time: 341.72 us
+Average Execution Time: 373.20 us
+Peak Memory Usage: 18.80 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=192 ---
@@ -107,9 +123,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 192])
-Average Execution Time: 353.44 us
+Average Execution Time: 551.55 us
+Peak Memory Usage: 24.05 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=4096, D=256 ---
@@ -129,9 +149,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 2, 256])
-Average Execution Time: 380.88 us
+Average Execution Time: 1337.16 us
+Peak Memory Usage: 36.05 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=64 ---
@@ -151,9 +175,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 64])
-Average Execution Time: 370.98 us
+Average Execution Time: 389.09 us
+Peak Memory Usage: 12.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=96 ---
@@ -173,9 +201,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 96])
-Average Execution Time: 374.92 us
+Average Execution Time: 825.24 us
+Peak Memory Usage: 20.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=128 ---
@@ -195,9 +227,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 128])
-Average Execution Time: 393.96 us
+Average Execution Time: 702.82 us
+Peak Memory Usage: 28.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=160 ---
@@ -217,9 +253,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 160])
-Average Execution Time: 432.94 us
+Average Execution Time: 887.68 us
+Peak Memory Usage: 37.59 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=192 ---
@@ -239,9 +279,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 192])
-Average Execution Time: 442.49 us
+Average Execution Time: 880.76 us
+Peak Memory Usage: 48.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=8192, D=256 ---
@@ -261,9 +305,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 2, 256])
-Average Execution Time: 493.60 us
+Average Execution Time: 497.71 us
+Peak Memory Usage: 72.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=64 ---
@@ -283,9 +331,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 64])
-Average Execution Time: 449.70 us
+Average Execution Time: 509.39 us
+Peak Memory Usage: 24.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=96 ---
@@ -305,9 +357,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 96])
-Average Execution Time: 549.95 us
+Average Execution Time: 582.93 us
+Peak Memory Usage: 39.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=128 ---
@@ -327,9 +383,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 128])
-Average Execution Time: 565.47 us
+Average Execution Time: 717.10 us
+Peak Memory Usage: 56.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=160 ---
@@ -349,9 +409,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 160])
-Average Execution Time: 607.69 us
+Average Execution Time: 628.59 us
+Peak Memory Usage: 75.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=192 ---
@@ -371,9 +435,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 192])
-Average Execution Time: 641.79 us
+Average Execution Time: 1086.15 us
+Peak Memory Usage: 96.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=16384, D=256 ---
@@ -393,9 +461,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 2, 256])
-Average Execution Time: 719.95 us
+Average Execution Time: 706.65 us
+Peak Memory Usage: 144.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=64 ---
@@ -415,9 +487,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 64])
-Average Execution Time: 781.16 us
+Average Execution Time: 1547.74 us
+Peak Memory Usage: 48.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=96 ---
@@ -437,9 +513,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 96])
-Average Execution Time: 858.37 us
+Average Execution Time: 1993.96 us
+Peak Memory Usage: 78.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=128 ---
@@ -459,9 +539,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 128])
-Average Execution Time: 865.34 us
+Average Execution Time: 1306.26 us
+Peak Memory Usage: 112.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=160 ---
@@ -481,9 +565,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 160])
-Average Execution Time: 944.37 us
+Average Execution Time: 1410.54 us
+Peak Memory Usage: 150.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=192 ---
@@ -503,9 +591,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 192])
-Average Execution Time: 994.20 us
+Average Execution Time: 1098.04 us
+Peak Memory Usage: 192.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=32768, D=256 ---
@@ -525,9 +617,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 2, 256])
-Average Execution Time: 1118.76 us
+Average Execution Time: 1274.65 us
+Peak Memory Usage: 288.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=64 ---
@@ -547,9 +643,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 64])
-Average Execution Time: 1284.35 us
+Average Execution Time: 1570.94 us
+Peak Memory Usage: 96.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=96 ---
@@ -569,9 +669,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 96])
-Average Execution Time: 1409.45 us
+Average Execution Time: 1507.28 us
+Peak Memory Usage: 156.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=128 ---
@@ -591,9 +695,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 128])
-Average Execution Time: 1470.50 us
+Average Execution Time: 1624.43 us
+Peak Memory Usage: 224.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=160 ---
@@ -613,9 +721,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 160])
-Average Execution Time: 1590.23 us
+Average Execution Time: 1766.22 us
+Peak Memory Usage: 300.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=192 ---
@@ -635,9 +747,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 192])
-Average Execution Time: 1685.35 us
+Average Execution Time: 4270.55 us
+Peak Memory Usage: 384.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=65536, D=256 ---
@@ -657,9 +773,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 2, 256])
-Average Execution Time: 1997.27 us
+Average Execution Time: 1928.47 us
+Peak Memory Usage: 576.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=64 ---
@@ -679,9 +799,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 64])
-Average Execution Time: 2322.98 us
+Average Execution Time: 2351.15 us
+Peak Memory Usage: 193.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=96 ---
@@ -701,9 +825,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 96])
-Average Execution Time: 2544.38 us
+Average Execution Time: 2899.82 us
+Peak Memory Usage: 313.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=128 ---
@@ -723,9 +851,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 128])
-Average Execution Time: 2658.59 us
+Average Execution Time: 2697.95 us
+Peak Memory Usage: 449.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=160 ---
@@ -745,9 +877,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 160])
-Average Execution Time: 2927.58 us
+Average Execution Time: 3763.08 us
+Peak Memory Usage: 601.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=192 ---
@@ -767,9 +903,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 192])
-Average Execution Time: 3120.86 us
+Average Execution Time: 3428.95 us
+Peak Memory Usage: 769.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=2, T=131072, D=256 ---
@@ -789,9 +929,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 2, 256])
-Average Execution Time: 3476.67 us
+Average Execution Time: 5677.18 us
+Peak Memory Usage: 1153.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=64 ---
@@ -811,9 +955,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 64])
-Average Execution Time: 321.98 us
+Average Execution Time: 360.72 us
+Peak Memory Usage: 12.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=96 ---
@@ -833,9 +981,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 96])
-Average Execution Time: 331.44 us
+Average Execution Time: 354.10 us
+Peak Memory Usage: 20.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=128 ---
@@ -855,9 +1007,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 128])
-Average Execution Time: 340.44 us
+Average Execution Time: 517.00 us
+Peak Memory Usage: 28.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=160 ---
@@ -877,9 +1033,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 160])
-Average Execution Time: 361.78 us
+Average Execution Time: 387.13 us
+Peak Memory Usage: 37.59 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=192 ---
@@ -899,9 +1059,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 192])
-Average Execution Time: 386.71 us
+Average Execution Time: 420.08 us
+Peak Memory Usage: 48.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=4096, D=256 ---
@@ -921,9 +1085,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 4, 256])
-Average Execution Time: 414.06 us
+Average Execution Time: 623.88 us
+Peak Memory Usage: 72.09 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=64 ---
@@ -943,9 +1111,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 64])
-Average Execution Time: 370.68 us
+Average Execution Time: 403.55 us
+Peak Memory Usage: 24.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=96 ---
@@ -965,9 +1137,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 96])
-Average Execution Time: 442.38 us
+Average Execution Time: 507.94 us
+Peak Memory Usage: 39.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=128 ---
@@ -987,9 +1163,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 128])
-Average Execution Time: 449.58 us
+Average Execution Time: 503.70 us
+Peak Memory Usage: 56.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=160 ---
@@ -1009,9 +1189,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 160])
-Average Execution Time: 475.40 us
+Average Execution Time: 505.34 us
+Peak Memory Usage: 75.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=192 ---
@@ -1031,9 +1215,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 192])
-Average Execution Time: 517.67 us
+Average Execution Time: 546.36 us
+Peak Memory Usage: 96.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=8192, D=256 ---
@@ -1053,9 +1241,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 4, 256])
-Average Execution Time: 553.55 us
+Average Execution Time: 625.61 us
+Peak Memory Usage: 144.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=64 ---
@@ -1075,9 +1267,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 64])
-Average Execution Time: 566.63 us
+Average Execution Time: 595.96 us
+Peak Memory Usage: 48.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=96 ---
@@ -1097,9 +1293,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 96])
-Average Execution Time: 601.68 us
+Average Execution Time: 627.41 us
+Peak Memory Usage: 78.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=128 ---
@@ -1119,9 +1319,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 128])
-Average Execution Time: 599.60 us
+Average Execution Time: 645.09 us
+Peak Memory Usage: 112.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=160 ---
@@ -1141,9 +1345,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 160])
-Average Execution Time: 707.80 us
+Average Execution Time: 729.36 us
+Peak Memory Usage: 150.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=192 ---
@@ -1163,9 +1371,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 192])
-Average Execution Time: 766.77 us
+Average Execution Time: 1076.14 us
+Peak Memory Usage: 192.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=16384, D=256 ---
@@ -1185,9 +1397,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 4, 256])
-Average Execution Time: 863.39 us
+Average Execution Time: 1010.84 us
+Peak Memory Usage: 288.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=64 ---
@@ -1207,9 +1423,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 64])
-Average Execution Time: 855.45 us
+Average Execution Time: 875.67 us
+Peak Memory Usage: 96.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=96 ---
@@ -1229,9 +1449,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 96])
-Average Execution Time: 938.73 us
+Average Execution Time: 1470.61 us
+Peak Memory Usage: 156.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=128 ---
@@ -1251,9 +1475,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 128])
-Average Execution Time: 1000.51 us
+Average Execution Time: 1168.04 us
+Peak Memory Usage: 224.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=160 ---
@@ -1273,9 +1501,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 160])
-Average Execution Time: 1085.04 us
+Average Execution Time: 1853.91 us
+Peak Memory Usage: 300.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=192 ---
@@ -1295,9 +1527,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 192])
-Average Execution Time: 1252.70 us
+Average Execution Time: 1260.64 us
+Peak Memory Usage: 384.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=32768, D=256 ---
@@ -1317,9 +1553,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 4, 256])
-Average Execution Time: 1450.31 us
+Average Execution Time: 1518.02 us
+Peak Memory Usage: 576.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=64 ---
@@ -1339,9 +1579,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 64])
-Average Execution Time: 1436.10 us
+Average Execution Time: 1467.44 us
+Peak Memory Usage: 193.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=96 ---
@@ -1361,9 +1605,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 96])
-Average Execution Time: 1590.81 us
+Average Execution Time: 1717.06 us
+Peak Memory Usage: 313.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=128 ---
@@ -1383,9 +1631,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 128])
-Average Execution Time: 1730.10 us
+Average Execution Time: 1711.05 us
+Peak Memory Usage: 449.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=160 ---
@@ -1405,9 +1657,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 160])
-Average Execution Time: 1936.83 us
+Average Execution Time: 2998.60 us
+Peak Memory Usage: 601.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=192 ---
@@ -1427,9 +1683,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 192])
-Average Execution Time: 2194.99 us
+Average Execution Time: 2735.97 us
+Peak Memory Usage: 769.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=65536, D=256 ---
@@ -1449,9 +1709,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 4, 256])
-Average Execution Time: 2660.16 us
+Average Execution Time: 2620.49 us
+Peak Memory Usage: 1153.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=64 ---
@@ -1471,9 +1735,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 64])
-Average Execution Time: 2560.17 us
+Average Execution Time: 4526.40 us
+Peak Memory Usage: 387.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=96 ---
@@ -1493,9 +1761,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 96])
-Average Execution Time: 2892.98 us
+Average Execution Time: 2927.54 us
+Peak Memory Usage: 627.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=128 ---
@@ -1515,9 +1787,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 128])
-Average Execution Time: 3136.29 us
+Average Execution Time: 3826.75 us
+Peak Memory Usage: 899.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=160 ---
@@ -1537,9 +1813,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 160])
-Average Execution Time: 3537.37 us
+Average Execution Time: 3532.43 us
+Peak Memory Usage: 1203.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=192 ---
@@ -1559,9 +1839,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 192])
-Average Execution Time: 4035.38 us
+Average Execution Time: 5265.42 us
+Peak Memory Usage: 1539.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=4, T=131072, D=256 ---
@@ -1581,9 +1865,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 4, 256])
-Average Execution Time: 5109.08 us
+Average Execution Time: 7590.23 us
+Peak Memory Usage: 2307.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=64 ---
@@ -1603,9 +1891,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 64])
-Average Execution Time: 331.09 us
+Average Execution Time: 401.48 us
+Peak Memory Usage: 24.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=96 ---
@@ -1625,9 +1917,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 96])
-Average Execution Time: 375.61 us
+Average Execution Time: 682.06 us
+Peak Memory Usage: 39.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=128 ---
@@ -1647,9 +1943,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 128])
-Average Execution Time: 394.03 us
+Average Execution Time: 432.60 us
+Peak Memory Usage: 56.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=160 ---
@@ -1669,9 +1969,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 160])
-Average Execution Time: 430.15 us
+Average Execution Time: 457.25 us
+Peak Memory Usage: 75.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=192 ---
@@ -1691,9 +1995,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 192])
-Average Execution Time: 449.87 us
+Average Execution Time: 598.18 us
+Peak Memory Usage: 96.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=4096, D=256 ---
@@ -1713,9 +2021,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 8, 256])
-Average Execution Time: 529.82 us
+Average Execution Time: 519.48 us
+Peak Memory Usage: 144.19 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=64 ---
@@ -1735,9 +2047,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 64])
-Average Execution Time: 445.37 us
+Average Execution Time: 475.42 us
+Peak Memory Usage: 48.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=96 ---
@@ -1757,9 +2073,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 96])
-Average Execution Time: 481.07 us
+Average Execution Time: 507.30 us
+Peak Memory Usage: 78.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=128 ---
@@ -1779,9 +2099,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 128])
-Average Execution Time: 513.24 us
+Average Execution Time: 819.03 us
+Peak Memory Usage: 112.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=160 ---
@@ -1801,9 +2125,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 160])
-Average Execution Time: 569.24 us
+Average Execution Time: 1113.14 us
+Peak Memory Usage: 150.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=192 ---
@@ -1823,9 +2151,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 192])
-Average Execution Time: 628.54 us
+Average Execution Time: 1061.39 us
+Peak Memory Usage: 192.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=8192, D=256 ---
@@ -1845,9 +2177,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 8, 256])
-Average Execution Time: 736.26 us
+Average Execution Time: 764.56 us
+Peak Memory Usage: 288.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=64 ---
@@ -1867,9 +2203,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 64])
-Average Execution Time: 604.49 us
+Average Execution Time: 628.46 us
+Peak Memory Usage: 96.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=96 ---
@@ -1889,9 +2229,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 96])
-Average Execution Time: 686.62 us
+Average Execution Time: 2027.94 us
+Peak Memory Usage: 156.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=128 ---
@@ -1911,9 +2255,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 128])
-Average Execution Time: 776.76 us
+Average Execution Time: 1377.68 us
+Peak Memory Usage: 224.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=160 ---
@@ -1933,9 +2281,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 160])
-Average Execution Time: 891.21 us
+Average Execution Time: 910.04 us
+Peak Memory Usage: 300.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=192 ---
@@ -1955,9 +2307,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 192])
-Average Execution Time: 984.92 us
+Average Execution Time: 1091.58 us
+Peak Memory Usage: 384.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=16384, D=256 ---
@@ -1977,9 +2333,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 8, 256])
-Average Execution Time: 1191.40 us
+Average Execution Time: 1473.45 us
+Peak Memory Usage: 576.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=64 ---
@@ -1999,9 +2359,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 64])
-Average Execution Time: 974.61 us
+Average Execution Time: 1005.85 us
+Peak Memory Usage: 193.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=96 ---
@@ -2021,9 +2385,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 96])
-Average Execution Time: 1116.44 us
+Average Execution Time: 1373.71 us
+Peak Memory Usage: 313.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=128 ---
@@ -2043,9 +2411,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 128])
-Average Execution Time: 1248.08 us
+Average Execution Time: 1629.73 us
+Peak Memory Usage: 449.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=160 ---
@@ -2065,9 +2437,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 160])
-Average Execution Time: 1522.97 us
+Average Execution Time: 1663.00 us
+Peak Memory Usage: 601.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=192 ---
@@ -2087,9 +2463,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 192])
-Average Execution Time: 1702.17 us
+Average Execution Time: 2085.89 us
+Peak Memory Usage: 769.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=32768, D=256 ---
@@ -2109,9 +2489,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 8, 256])
-Average Execution Time: 2170.00 us
+Average Execution Time: 4324.91 us
+Peak Memory Usage: 1153.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=64 ---
@@ -2131,9 +2515,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 64])
-Average Execution Time: 1636.42 us
+Average Execution Time: 1686.35 us
+Peak Memory Usage: 387.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=96 ---
@@ -2153,9 +2541,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 96])
-Average Execution Time: 1941.26 us
+Average Execution Time: 2043.57 us
+Peak Memory Usage: 627.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=128 ---
@@ -2175,9 +2567,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 128])
-Average Execution Time: 2188.84 us
+Average Execution Time: 2706.71 us
+Peak Memory Usage: 899.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=160 ---
@@ -2197,9 +2593,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 160])
-Average Execution Time: 2793.82 us
+Average Execution Time: 3555.90 us
+Peak Memory Usage: 1203.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=192 ---
@@ -2219,9 +2619,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 192])
-Average Execution Time: 3160.87 us
+Average Execution Time: 4006.45 us
+Peak Memory Usage: 1539.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=65536, D=256 ---
@@ -2241,9 +2645,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 8, 256])
-Average Execution Time: 4295.28 us
+Average Execution Time: 3895.76 us
+Peak Memory Usage: 2307.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=64 ---
@@ -2263,9 +2671,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 64])
-Average Execution Time: 2993.39 us
+Average Execution Time: 3018.19 us
+Peak Memory Usage: 774.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=96 ---
@@ -2285,9 +2697,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 96])
-Average Execution Time: 3555.41 us
+Average Execution Time: 3571.61 us
+Peak Memory Usage: 1254.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=128 ---
@@ -2307,9 +2723,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 128])
-Average Execution Time: 4075.98 us
+Average Execution Time: 4448.24 us
+Peak Memory Usage: 1798.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=160 ---
@@ -2329,9 +2749,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 160])
-Average Execution Time: 5287.13 us
+Average Execution Time: 5210.36 us
+Peak Memory Usage: 2406.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=192 ---
@@ -2351,9 +2775,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 192])
-Average Execution Time: 6226.44 us
+Average Execution Time: 7107.86 us
+Peak Memory Usage: 3078.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=8, T=131072, D=256 ---
@@ -2373,9 +2801,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 8, 256])
-Average Execution Time: 7941.34 us
+Average Execution Time: 8010.12 us
+Peak Memory Usage: 4614.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=64 ---
@@ -2395,9 +2827,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 64])
-Average Execution Time: 371.83 us
+Average Execution Time: 373.95 us
+Peak Memory Usage: 36.28 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=96 ---
@@ -2417,9 +2853,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 96])
-Average Execution Time: 396.15 us
+Average Execution Time: 421.91 us
+Peak Memory Usage: 58.78 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=128 ---
@@ -2439,9 +2879,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 128])
-Average Execution Time: 417.25 us
+Average Execution Time: 641.44 us
+Peak Memory Usage: 84.28 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=160 ---
@@ -2461,9 +2905,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 160])
-Average Execution Time: 519.58 us
+Average Execution Time: 482.08 us
+Peak Memory Usage: 115.78 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=192 ---
@@ -2483,9 +2931,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 192])
-Average Execution Time: 513.67 us
+Average Execution Time: 670.84 us
+Peak Memory Usage: 144.28 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=4096, D=256 ---
@@ -2505,9 +2957,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 12, 256])
-Average Execution Time: 606.81 us
+Average Execution Time: 659.60 us
+Peak Memory Usage: 216.28 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=64 ---
@@ -2527,9 +2983,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 64])
-Average Execution Time: 503.38 us
+Average Execution Time: 483.91 us
+Peak Memory Usage: 72.56 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=96 ---
@@ -2549,9 +3009,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 96])
-Average Execution Time: 525.71 us
+Average Execution Time: 700.02 us
+Peak Memory Usage: 117.56 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=128 ---
@@ -2571,9 +3035,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 128])
-Average Execution Time: 572.98 us
+Average Execution Time: 910.08 us
+Peak Memory Usage: 168.56 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=160 ---
@@ -2593,9 +3061,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 160])
-Average Execution Time: 682.52 us
+Average Execution Time: 702.10 us
+Peak Memory Usage: 225.56 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=192 ---
@@ -2615,9 +3087,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 192])
-Average Execution Time: 738.83 us
+Average Execution Time: 1724.76 us
+Peak Memory Usage: 288.56 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=8192, D=256 ---
@@ -2637,9 +3113,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 12, 256])
-Average Execution Time: 948.31 us
+Average Execution Time: 1109.88 us
+Peak Memory Usage: 432.56 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=64 ---
@@ -2659,9 +3139,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 64])
-Average Execution Time: 657.64 us
+Average Execution Time: 691.93 us
+Peak Memory Usage: 145.12 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=96 ---
@@ -2681,9 +3165,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 96])
-Average Execution Time: 781.06 us
+Average Execution Time: 893.39 us
+Peak Memory Usage: 235.12 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=128 ---
@@ -2703,9 +3191,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 128])
-Average Execution Time: 882.35 us
+Average Execution Time: 1062.41 us
+Peak Memory Usage: 337.12 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=160 ---
@@ -2725,9 +3217,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 160])
-Average Execution Time: 1137.19 us
+Average Execution Time: 1139.42 us
+Peak Memory Usage: 451.12 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=192 ---
@@ -2747,9 +3243,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 192])
-Average Execution Time: 1221.64 us
+Average Execution Time: 2053.00 us
+Peak Memory Usage: 577.12 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=16384, D=256 ---
@@ -2769,9 +3269,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 12, 256])
-Average Execution Time: 1602.38 us
+Average Execution Time: 1703.02 us
+Peak Memory Usage: 865.12 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=64 ---
@@ -2791,9 +3295,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 64])
-Average Execution Time: 1051.22 us
+Average Execution Time: 1119.59 us
+Peak Memory Usage: 290.25 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=96 ---
@@ -2813,9 +3321,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 96])
-Average Execution Time: 1290.57 us
+Average Execution Time: 1355.63 us
+Peak Memory Usage: 470.25 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=128 ---
@@ -2835,9 +3347,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 128])
-Average Execution Time: 1503.30 us
+Average Execution Time: 1493.00 us
+Peak Memory Usage: 674.25 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=160 ---
@@ -2857,9 +3373,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 160])
-Average Execution Time: 1982.60 us
+Average Execution Time: 2007.42 us
+Peak Memory Usage: 902.25 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=192 ---
@@ -2879,9 +3399,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 192])
-Average Execution Time: 2190.92 us
+Average Execution Time: 2160.86 us
+Peak Memory Usage: 1154.25 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=32768, D=256 ---
@@ -2901,9 +3425,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 12, 256])
-Average Execution Time: 3026.40 us
+Average Execution Time: 5927.78 us
+Peak Memory Usage: 1730.25 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=64 ---
@@ -2923,9 +3451,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 64])
-Average Execution Time: 1870.22 us
+Average Execution Time: 1857.19 us
+Peak Memory Usage: 580.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=96 ---
@@ -2945,9 +3477,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 96])
-Average Execution Time: 2291.97 us
+Average Execution Time: 3503.37 us
+Peak Memory Usage: 940.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=128 ---
@@ -2967,9 +3503,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 128])
-Average Execution Time: 2708.83 us
+Average Execution Time: 2797.61 us
+Peak Memory Usage: 1348.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=160 ---
@@ -2989,9 +3529,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 160])
-Average Execution Time: 3789.20 us
+Average Execution Time: 4003.13 us
+Peak Memory Usage: 1804.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=192 ---
@@ -3011,9 +3555,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 192])
-Average Execution Time: 4149.20 us
+Average Execution Time: 4062.61 us
+Peak Memory Usage: 2308.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=65536, D=256 ---
@@ -3033,9 +3581,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 12, 256])
-Average Execution Time: 5770.87 us
+Average Execution Time: 6493.28 us
+Peak Memory Usage: 3460.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=64 ---
@@ -3055,9 +3607,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 64])
-Average Execution Time: 3396.44 us
+Average Execution Time: 6665.20 us
+Peak Memory Usage: 1161.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=96 ---
@@ -3077,9 +3633,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 96])
-Average Execution Time: 4320.24 us
+Average Execution Time: 4572.55 us
+Peak Memory Usage: 1881.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=128 ---
@@ -3099,9 +3659,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 128])
-Average Execution Time: 5140.08 us
+Average Execution Time: 6065.94 us
+Peak Memory Usage: 2697.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=160 ---
@@ -3121,9 +3685,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 160])
-Average Execution Time: 7406.10 us
+Average Execution Time: 8993.40 us
+Peak Memory Usage: 3609.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=192 ---
@@ -3143,9 +3711,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 192])
-Average Execution Time: 8071.53 us
+Average Execution Time: 8226.86 us
+Peak Memory Usage: 4617.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=12, T=131072, D=256 ---
@@ -3165,9 +3737,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 12, 256])
-Average Execution Time: 11434.80 us
+Average Execution Time: 11726.77 us
+Peak Memory Usage: 6921.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=64 ---
@@ -3187,9 +3763,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 64])
-Average Execution Time: 384.44 us
+Average Execution Time: 571.64 us
+Peak Memory Usage: 48.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=96 ---
@@ -3209,9 +3789,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 96])
-Average Execution Time: 439.38 us
+Average Execution Time: 556.40 us
+Peak Memory Usage: 78.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=128 ---
@@ -3231,9 +3815,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 128])
-Average Execution Time: 445.61 us
+Average Execution Time: 513.99 us
+Peak Memory Usage: 112.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=160 ---
@@ -3253,9 +3841,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 160])
-Average Execution Time: 530.50 us
+Average Execution Time: 650.96 us
+Peak Memory Usage: 150.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=192 ---
@@ -3275,9 +3867,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 192])
-Average Execution Time: 581.09 us
+Average Execution Time: 599.19 us
+Peak Memory Usage: 192.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=4096, D=256 ---
@@ -3297,9 +3893,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 16, 256])
-Average Execution Time: 702.40 us
+Average Execution Time: 1607.77 us
+Peak Memory Usage: 288.38 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=64 ---
@@ -3319,9 +3919,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 64])
-Average Execution Time: 475.27 us
+Average Execution Time: 600.93 us
+Peak Memory Usage: 96.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=96 ---
@@ -3341,9 +3945,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 96])
-Average Execution Time: 574.24 us
+Average Execution Time: 602.08 us
+Peak Memory Usage: 156.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=128 ---
@@ -3363,9 +3971,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 128])
-Average Execution Time: 643.50 us
+Average Execution Time: 662.01 us
+Peak Memory Usage: 224.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=160 ---
@@ -3385,9 +3997,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 160])
-Average Execution Time: 776.49 us
+Average Execution Time: 3235.81 us
+Peak Memory Usage: 300.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=192 ---
@@ -3407,9 +4023,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 192])
-Average Execution Time: 891.14 us
+Average Execution Time: 4037.37 us
+Peak Memory Usage: 384.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=8192, D=256 ---
@@ -3429,9 +4049,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 16, 256])
-Average Execution Time: 1103.44 us
+Average Execution Time: 1133.56 us
+Peak Memory Usage: 576.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=64 ---
@@ -3451,9 +4075,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 64])
-Average Execution Time: 701.44 us
+Average Execution Time: 721.87 us
+Peak Memory Usage: 193.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=96 ---
@@ -3473,9 +4101,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 96])
-Average Execution Time: 884.31 us
+Average Execution Time: 932.46 us
+Peak Memory Usage: 313.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=128 ---
@@ -3495,9 +4127,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 128])
-Average Execution Time: 999.14 us
+Average Execution Time: 1264.22 us
+Peak Memory Usage: 449.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=160 ---
@@ -3517,9 +4153,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 160])
-Average Execution Time: 1288.51 us
+Average Execution Time: 1269.00 us
+Peak Memory Usage: 601.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=192 ---
@@ -3539,9 +4179,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 192])
-Average Execution Time: 1517.98 us
+Average Execution Time: 1573.88 us
+Peak Memory Usage: 769.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=16384, D=256 ---
@@ -3561,9 +4205,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 16, 256])
-Average Execution Time: 1988.67 us
+Average Execution Time: 1944.62 us
+Peak Memory Usage: 1153.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=64 ---
@@ -3583,9 +4231,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 64])
-Average Execution Time: 1168.33 us
+Average Execution Time: 1386.74 us
+Peak Memory Usage: 387.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=96 ---
@@ -3605,9 +4257,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 96])
-Average Execution Time: 1520.51 us
+Average Execution Time: 1520.19 us
+Peak Memory Usage: 627.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=128 ---
@@ -3627,9 +4283,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 128])
-Average Execution Time: 1775.47 us
+Average Execution Time: 1763.51 us
+Peak Memory Usage: 899.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=160 ---
@@ -3649,9 +4309,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 160])
-Average Execution Time: 2376.48 us
+Average Execution Time: 3369.29 us
+Peak Memory Usage: 1203.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=192 ---
@@ -3671,9 +4335,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 192])
-Average Execution Time: 2804.55 us
+Average Execution Time: 3996.69 us
+Peak Memory Usage: 1539.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=32768, D=256 ---
@@ -3693,9 +4361,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 16, 256])
-Average Execution Time: 3780.17 us
+Average Execution Time: 3859.31 us
+Peak Memory Usage: 2307.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=64 ---
@@ -3715,9 +4387,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 64])
-Average Execution Time: 2035.33 us
+Average Execution Time: 2823.68 us
+Peak Memory Usage: 774.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=96 ---
@@ -3737,9 +4413,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 96])
-Average Execution Time: 2754.34 us
+Average Execution Time: 3106.83 us
+Peak Memory Usage: 1254.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=128 ---
@@ -3759,9 +4439,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 128])
-Average Execution Time: 3294.36 us
+Average Execution Time: 3273.72 us
+Peak Memory Usage: 1798.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=160 ---
@@ -3781,9 +4465,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 160])
-Average Execution Time: 4689.27 us
+Average Execution Time: 4618.12 us
+Peak Memory Usage: 2406.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=192 ---
@@ -3803,9 +4491,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 192])
-Average Execution Time: 5335.30 us
+Average Execution Time: 5251.37 us
+Peak Memory Usage: 3078.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=65536, D=256 ---
@@ -3825,9 +4517,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 16, 256])
-Average Execution Time: 7380.90 us
+Average Execution Time: 7663.17 us
+Peak Memory Usage: 4614.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=64 ---
@@ -3847,9 +4543,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 64])
-Average Execution Time: 3744.47 us
+Average Execution Time: 3786.14 us
+Peak Memory Usage: 1548.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=96 ---
@@ -3869,9 +4569,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 96])
-Average Execution Time: 5240.44 us
+Average Execution Time: 5452.32 us
+Peak Memory Usage: 2508.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=128 ---
@@ -3891,9 +4595,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 128])
-Average Execution Time: 6375.46 us
+Average Execution Time: 10237.82 us
+Peak Memory Usage: 3596.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=160 ---
@@ -3913,9 +4621,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 160])
-Average Execution Time: 9234.54 us
+Average Execution Time: 11211.16 us
+Peak Memory Usage: 4812.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=192 ---
@@ -3935,9 +4647,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 192])
-Average Execution Time: 10362.18 us
+Average Execution Time: 10622.62 us
+Peak Memory Usage: 6156.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=16, T=131072, D=256 ---
@@ -3957,9 +4673,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 16, 256])
-Average Execution Time: 15071.18 us
+Average Execution Time: 15185.87 us
+Peak Memory Usage: 9228.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=64 ---
@@ -3979,9 +4699,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 64])
-Average Execution Time: 429.80 us
+Average Execution Time: 445.69 us
+Peak Memory Usage: 96.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=96 ---
@@ -4001,9 +4725,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 96])
-Average Execution Time: 525.02 us
+Average Execution Time: 1089.24 us
+Peak Memory Usage: 156.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=128 ---
@@ -4023,9 +4751,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 128])
-Average Execution Time: 588.00 us
+Average Execution Time: 596.27 us
+Peak Memory Usage: 224.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=160 ---
@@ -4045,9 +4777,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 160])
-Average Execution Time: 762.87 us
+Average Execution Time: 832.79 us
+Peak Memory Usage: 300.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=192 ---
@@ -4067,9 +4803,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 192])
-Average Execution Time: 816.41 us
+Average Execution Time: 1075.68 us
+Peak Memory Usage: 384.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=4096, D=256 ---
@@ -4089,9 +4829,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 4096, 32, 256])
-Average Execution Time: 1118.67 us
+Average Execution Time: 1208.96 us
+Peak Memory Usage: 576.75 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=64 ---
@@ -4111,9 +4855,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 64])
-Average Execution Time: 594.24 us
+Average Execution Time: 741.17 us
+Peak Memory Usage: 193.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=96 ---
@@ -4133,9 +4881,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 96])
-Average Execution Time: 771.68 us
+Average Execution Time: 1850.59 us
+Peak Memory Usage: 313.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=128 ---
@@ -4155,9 +4907,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 128])
-Average Execution Time: 917.02 us
+Average Execution Time: 1028.03 us
+Peak Memory Usage: 449.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=160 ---
@@ -4177,9 +4933,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 160])
-Average Execution Time: 1254.99 us
+Average Execution Time: 1810.03 us
+Peak Memory Usage: 601.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=192 ---
@@ -4199,9 +4959,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 192])
-Average Execution Time: 1427.31 us
+Average Execution Time: 1419.48 us
+Peak Memory Usage: 769.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=8192, D=256 ---
@@ -4221,9 +4985,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 8192, 32, 256])
-Average Execution Time: 1958.96 us
+Average Execution Time: 2172.36 us
+Peak Memory Usage: 1153.50 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=64 ---
@@ -4243,9 +5011,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 64])
-Average Execution Time: 923.66 us
+Average Execution Time: 971.92 us
+Peak Memory Usage: 387.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=96 ---
@@ -4265,9 +5037,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 96])
-Average Execution Time: 1280.27 us
+Average Execution Time: 1290.39 us
+Peak Memory Usage: 627.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=128 ---
@@ -4287,9 +5063,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 128])
-Average Execution Time: 1594.38 us
+Average Execution Time: 3420.59 us
+Peak Memory Usage: 899.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=160 ---
@@ -4309,9 +5089,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 160])
-Average Execution Time: 2433.21 us
+Average Execution Time: 2293.64 us
+Peak Memory Usage: 1203.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=192 ---
@@ -4331,9 +5115,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 192])
-Average Execution Time: 2595.94 us
+Average Execution Time: 5529.28 us
+Peak Memory Usage: 1539.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=16384, D=256 ---
@@ -4353,9 +5141,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 16384, 32, 256])
-Average Execution Time: 3785.54 us
+Average Execution Time: 3685.45 us
+Peak Memory Usage: 2307.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=64 ---
@@ -4375,9 +5167,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 64])
-Average Execution Time: 1613.89 us
+Average Execution Time: 2122.77 us
+Peak Memory Usage: 774.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=96 ---
@@ -4397,9 +5193,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 96])
-Average Execution Time: 2346.95 us
+Average Execution Time: 2441.15 us
+Peak Memory Usage: 1254.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=128 ---
@@ -4419,9 +5219,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 128])
-Average Execution Time: 2866.77 us
+Average Execution Time: 5636.36 us
+Peak Memory Usage: 1798.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=160 ---
@@ -4441,9 +5245,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 160])
-Average Execution Time: 4473.28 us
+Average Execution Time: 4417.98 us
+Peak Memory Usage: 2406.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=192 ---
@@ -4463,9 +5271,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 192])
-Average Execution Time: 5021.31 us
+Average Execution Time: 5083.59 us
+Peak Memory Usage: 3078.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=32768, D=256 ---
@@ -4485,9 +5297,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 32768, 32, 256])
-Average Execution Time: 7539.27 us
+Average Execution Time: 7857.54 us
+Peak Memory Usage: 4614.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=64 ---
@@ -4507,9 +5323,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 64])
-Average Execution Time: 2890.66 us
+Average Execution Time: 2948.33 us
+Peak Memory Usage: 1548.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=96 ---
@@ -4529,9 +5349,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 96])
-Average Execution Time: 4535.27 us
+Average Execution Time: 6630.69 us
+Peak Memory Usage: 2508.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=128 ---
@@ -4551,9 +5375,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 128])
-Average Execution Time: 5574.87 us
+Average Execution Time: 9766.72 us
+Peak Memory Usage: 3596.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=160 ---
@@ -4573,9 +5401,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 160])
-Average Execution Time: 8891.48 us
+Average Execution Time: 9380.92 us
+Peak Memory Usage: 4812.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=192 ---
@@ -4595,9 +5427,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 192])
-Average Execution Time: 9917.87 us
+Average Execution Time: 14084.86 us
+Peak Memory Usage: 6156.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=65536, D=256 ---
@@ -4617,9 +5453,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 65536, 32, 256])
-Average Execution Time: 15175.02 us
+Average Execution Time: 17550.33 us
+Peak Memory Usage: 9228.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=64 ---
@@ -4639,9 +5479,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 64])
-Average Execution Time: 5437.30 us
+Average Execution Time: 6104.51 us
+Peak Memory Usage: 3096.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=96 ---
@@ -4661,9 +5505,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 96])
-Average Execution Time: 8954.81 us
+Average Execution Time: 10493.60 us
+Peak Memory Usage: 5016.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=128 ---
@@ -4683,9 +5531,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 128])
-Average Execution Time: 10897.58 us
+Average Execution Time: 11133.13 us
+Peak Memory Usage: 7192.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=160 ---
@@ -4705,9 +5557,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 160])
-Average Execution Time: 17810.14 us
+Average Execution Time: 18951.42 us
+Peak Memory Usage: 9624.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=192 ---
@@ -4727,9 +5583,13 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 192])
-Average Execution Time: 19686.39 us
+Average Execution Time: 20857.74 us
+Peak Memory Usage: 12312.00 MB
 --------------------
 
 --- Test Parameters: B=1, H=32, T=131072, D=256 ---
@@ -4749,7 +5609,11 @@ Warm-up complete.
 Starting timer for 50 runs...
 Timing complete.
 
+Measuring peak memory usage...
+Memory measurement complete.
+
 ---- Benchmark Results ----
 Output Shape: torch.Size([1, 131072, 32, 256])
-Average Execution Time: 31007.77 us
+Average Execution Time: 31390.81 us
+Peak Memory Usage: 18456.00 MB
 --------------------
