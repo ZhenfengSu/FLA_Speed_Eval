@@ -1,0 +1,5606 @@
+Benchmark results for version: parallel
+Test run on: 2025年 08月 26日 星期二 05:11:37 CST
+----------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=4096, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 2, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 2, 64])
+Average Execution Time: 1302.60 us
+Peak Memory Usage: 9.08 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=4096, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 2, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 2, 96])
+Average Execution Time: 1266.23 us
+Peak Memory Usage: 13.58 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=4096, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 2, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 2, 128])
+Average Execution Time: 2244.14 us
+Peak Memory Usage: 18.08 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=4096, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 2, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 2, 160])
+Average Execution Time: 2126.40 us
+Peak Memory Usage: 47.67 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=4096, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 2, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 2, 192])
+Average Execution Time: 2435.50 us
+Peak Memory Usage: 57.17 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=4096, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 2, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 2, 256])
+Average Execution Time: 2234.86 us
+Peak Memory Usage: 76.17 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=8192, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 2, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 2, 64])
+Average Execution Time: 1761.24 us
+Peak Memory Usage: 18.16 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=8192, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 2, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 2, 96])
+Average Execution Time: 2614.07 us
+Peak Memory Usage: 27.16 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=8192, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 2, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 2, 128])
+Average Execution Time: 3107.40 us
+Peak Memory Usage: 36.16 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=8192, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 2, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 2, 160])
+Average Execution Time: 6949.41 us
+Peak Memory Usage: 95.34 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=8192, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 2, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 2, 192])
+Average Execution Time: 6970.97 us
+Peak Memory Usage: 114.34 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=8192, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 2, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 2, 256])
+Average Execution Time: 7223.17 us
+Peak Memory Usage: 152.34 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=16384, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 2, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 2, 64])
+Average Execution Time: 4340.97 us
+Peak Memory Usage: 36.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=16384, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 2, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 2, 96])
+Average Execution Time: 7826.92 us
+Peak Memory Usage: 54.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=16384, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 2, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 2, 128])
+Average Execution Time: 8190.37 us
+Peak Memory Usage: 72.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=16384, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 2, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 2, 160])
+Average Execution Time: 27350.12 us
+Peak Memory Usage: 190.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=16384, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 2, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 2, 192])
+Average Execution Time: 27176.11 us
+Peak Memory Usage: 228.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=16384, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 2, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 2, 256])
+Average Execution Time: 27552.75 us
+Peak Memory Usage: 304.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=32768, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 2, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 2, 64])
+Average Execution Time: 13955.57 us
+Peak Memory Usage: 72.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=32768, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 2, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 2, 96])
+Average Execution Time: 26946.33 us
+Peak Memory Usage: 108.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=32768, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 2, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 2, 128])
+Average Execution Time: 27448.91 us
+Peak Memory Usage: 144.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=32768, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 2, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 2, 160])
+Average Execution Time: 106239.61 us
+Peak Memory Usage: 381.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=32768, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 2, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 2, 192])
+Average Execution Time: 107279.15 us
+Peak Memory Usage: 457.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=32768, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 2, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 2, 256])
+Average Execution Time: 108926.01 us
+Peak Memory Usage: 609.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=65536, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 2, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 2, 64])
+Average Execution Time: 48400.31 us
+Peak Memory Usage: 145.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=65536, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 2, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 2, 96])
+Average Execution Time: 108031.52 us
+Peak Memory Usage: 217.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=65536, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 2, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 2, 128])
+Average Execution Time: 109654.35 us
+Peak Memory Usage: 289.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=65536, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 2, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 2, 160])
+Average Execution Time: 440320.25 us
+Peak Memory Usage: 762.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=65536, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 2, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 2, 192])
+Average Execution Time: 444067.61 us
+Peak Memory Usage: 914.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=65536, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 2, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 2, 256])
+Average Execution Time: 449261.40 us
+Peak Memory Usage: 1218.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=131072, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 2, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 2, 64])
+Average Execution Time: 200436.36 us
+Peak Memory Usage: 290.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=131072, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 2, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 2, 96])
+Average Execution Time: 438526.64 us
+Peak Memory Usage: 434.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=131072, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 2, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 2, 128])
+Average Execution Time: 441615.53 us
+Peak Memory Usage: 578.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=131072, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 2, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 2, 160])
+Average Execution Time: 1789594.94 us
+Peak Memory Usage: 1525.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=131072, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 2, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 2, 192])
+Average Execution Time: 1809400.94 us
+Peak Memory Usage: 1829.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=2, T=131072, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 2, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 2]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 2, 256])
+Average Execution Time: 1825209.18 us
+Peak Memory Usage: 2437.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=4096, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 4, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 4, 64])
+Average Execution Time: 1388.73 us
+Peak Memory Usage: 18.16 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=4096, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 4, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 4, 96])
+Average Execution Time: 1858.34 us
+Peak Memory Usage: 27.16 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=4096, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 4, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 4, 128])
+Average Execution Time: 1678.80 us
+Peak Memory Usage: 36.16 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=4096, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 4, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 4, 160])
+Average Execution Time: 3864.85 us
+Peak Memory Usage: 95.34 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=4096, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 4, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 4, 192])
+Average Execution Time: 3748.81 us
+Peak Memory Usage: 114.34 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=4096, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 4, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 4, 256])
+Average Execution Time: 3845.22 us
+Peak Memory Usage: 152.34 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=8192, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 4, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 4, 64])
+Average Execution Time: 2372.74 us
+Peak Memory Usage: 36.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=8192, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 4, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 4, 96])
+Average Execution Time: 4080.43 us
+Peak Memory Usage: 54.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=8192, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 4, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 4, 128])
+Average Execution Time: 4182.05 us
+Peak Memory Usage: 72.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=8192, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 4, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 4, 160])
+Average Execution Time: 13419.26 us
+Peak Memory Usage: 190.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=8192, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 4, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 4, 192])
+Average Execution Time: 13427.27 us
+Peak Memory Usage: 228.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=8192, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 4, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 4, 256])
+Average Execution Time: 13711.60 us
+Peak Memory Usage: 304.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=16384, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 4, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 4, 64])
+Average Execution Time: 7368.84 us
+Peak Memory Usage: 72.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=16384, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 4, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 4, 96])
+Average Execution Time: 13587.67 us
+Peak Memory Usage: 108.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=16384, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 4, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 4, 128])
+Average Execution Time: 13726.78 us
+Peak Memory Usage: 144.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=16384, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 4, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 4, 160])
+Average Execution Time: 51591.63 us
+Peak Memory Usage: 381.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=16384, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 4, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 4, 192])
+Average Execution Time: 51969.92 us
+Peak Memory Usage: 457.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=16384, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 4, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 4, 256])
+Average Execution Time: 52833.63 us
+Peak Memory Usage: 609.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=32768, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 4, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 4, 64])
+Average Execution Time: 24232.90 us
+Peak Memory Usage: 145.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=32768, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 4, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 4, 96])
+Average Execution Time: 52722.68 us
+Peak Memory Usage: 217.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=32768, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 4, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 4, 128])
+Average Execution Time: 52869.40 us
+Peak Memory Usage: 289.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=32768, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 4, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 4, 160])
+Average Execution Time: 217242.80 us
+Peak Memory Usage: 762.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=32768, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 4, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 4, 192])
+Average Execution Time: 219178.04 us
+Peak Memory Usage: 914.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=32768, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 4, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 4, 256])
+Average Execution Time: 222924.90 us
+Peak Memory Usage: 1218.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=65536, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 4, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 4, 64])
+Average Execution Time: 96375.54 us
+Peak Memory Usage: 290.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=65536, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 4, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 4, 96])
+Average Execution Time: 222435.81 us
+Peak Memory Usage: 434.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=65536, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 4, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 4, 128])
+Average Execution Time: 224416.32 us
+Peak Memory Usage: 578.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=65536, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 4, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 4, 160])
+Average Execution Time: 903499.08 us
+Peak Memory Usage: 1525.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=65536, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 4, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 4, 192])
+Average Execution Time: 910163.47 us
+Peak Memory Usage: 1829.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=65536, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 4, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 4, 256])
+Average Execution Time: 920554.43 us
+Peak Memory Usage: 2437.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=131072, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 4, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 4, 64])
+Average Execution Time: 400477.11 us
+Peak Memory Usage: 581.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=131072, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 4, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 4, 96])
+Average Execution Time: 889111.57 us
+Peak Memory Usage: 869.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=131072, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 4, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 4, 128])
+Average Execution Time: 893735.45 us
+Peak Memory Usage: 1157.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=131072, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 4, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 4, 160])
+Average Execution Time: 3684736.74 us
+Peak Memory Usage: 3051.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=131072, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 4, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 4, 192])
+Average Execution Time: 3720283.00 us
+Peak Memory Usage: 3659.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=4, T=131072, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 4, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 4]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 4, 256])
+Average Execution Time: 3751176.94 us
+Peak Memory Usage: 4875.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=4096, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 8, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 8, 64])
+Average Execution Time: 1406.66 us
+Peak Memory Usage: 36.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=4096, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 8, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 8, 96])
+Average Execution Time: 2354.78 us
+Peak Memory Usage: 54.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=4096, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 8, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 8, 128])
+Average Execution Time: 2542.30 us
+Peak Memory Usage: 72.31 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=4096, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 8, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 8, 160])
+Average Execution Time: 7336.22 us
+Peak Memory Usage: 190.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=4096, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 8, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 8, 192])
+Average Execution Time: 7577.64 us
+Peak Memory Usage: 228.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=4096, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 8, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 8, 256])
+Average Execution Time: 7530.04 us
+Peak Memory Usage: 304.69 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=8192, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 8, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 8, 64])
+Average Execution Time: 4748.00 us
+Peak Memory Usage: 72.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=8192, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 8, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 8, 96])
+Average Execution Time: 7449.97 us
+Peak Memory Usage: 108.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=8192, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 8, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 8, 128])
+Average Execution Time: 7456.31 us
+Peak Memory Usage: 144.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=8192, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 8, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 8, 160])
+Average Execution Time: 26822.50 us
+Peak Memory Usage: 381.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=8192, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 8, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 8, 192])
+Average Execution Time: 27008.44 us
+Peak Memory Usage: 457.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=8192, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 8, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 8, 256])
+Average Execution Time: 27972.71 us
+Peak Memory Usage: 609.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=16384, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 8, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 8, 64])
+Average Execution Time: 13024.16 us
+Peak Memory Usage: 145.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=16384, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 8, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 8, 96])
+Average Execution Time: 27432.86 us
+Peak Memory Usage: 217.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=16384, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 8, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 8, 128])
+Average Execution Time: 27384.29 us
+Peak Memory Usage: 289.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=16384, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 8, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 8, 160])
+Average Execution Time: 108585.33 us
+Peak Memory Usage: 762.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=16384, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 8, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 8, 192])
+Average Execution Time: 109493.28 us
+Peak Memory Usage: 914.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=16384, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 8, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 8, 256])
+Average Execution Time: 111964.81 us
+Peak Memory Usage: 1218.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=32768, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 8, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 8, 64])
+Average Execution Time: 50367.79 us
+Peak Memory Usage: 290.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=32768, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 8, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 8, 96])
+Average Execution Time: 110260.50 us
+Peak Memory Usage: 434.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=32768, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 8, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 8, 128])
+Average Execution Time: 110262.49 us
+Peak Memory Usage: 578.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=32768, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 8, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 8, 160])
+Average Execution Time: 459714.40 us
+Peak Memory Usage: 1525.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=32768, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 8, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 8, 192])
+Average Execution Time: 463556.30 us
+Peak Memory Usage: 1829.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=32768, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 8, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 8, 256])
+Average Execution Time: 463450.07 us
+Peak Memory Usage: 2437.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=65536, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 8, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 8, 64])
+Average Execution Time: 204360.89 us
+Peak Memory Usage: 581.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=65536, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 8, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 8, 96])
+Average Execution Time: 459509.40 us
+Peak Memory Usage: 869.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=65536, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 8, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 8, 128])
+Average Execution Time: 464492.19 us
+Peak Memory Usage: 1157.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=65536, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 8, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 8, 160])
+Average Execution Time: 1907785.73 us
+Peak Memory Usage: 3051.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=65536, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 8, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 8, 192])
+Average Execution Time: 1922781.76 us
+Peak Memory Usage: 3659.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=65536, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 8, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 8, 256])
+Average Execution Time: 1926912.97 us
+Peak Memory Usage: 4875.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=131072, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 8, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 8, 64])
+Average Execution Time: 857511.62 us
+Peak Memory Usage: 1162.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=131072, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 8, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 8, 96])
+Average Execution Time: 1865573.28 us
+Peak Memory Usage: 1738.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=131072, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 8, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 8, 128])
+Average Execution Time: 1894586.78 us
+Peak Memory Usage: 2314.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=131072, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 8, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 8, 160])
+Average Execution Time: 7813305.22 us
+Peak Memory Usage: 6102.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=131072, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 8, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 8, 192])
+Average Execution Time: 7876789.23 us
+Peak Memory Usage: 7318.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=8, T=131072, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 8, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 8]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 8, 256])
+Average Execution Time: 7900322.89 us
+Peak Memory Usage: 9750.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=4096, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 12, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 12, 64])
+Average Execution Time: 1916.55 us
+Peak Memory Usage: 54.47 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=4096, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 12, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 12, 96])
+Average Execution Time: 4330.39 us
+Peak Memory Usage: 81.47 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=4096, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 12, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 12, 128])
+Average Execution Time: 3227.73 us
+Peak Memory Usage: 108.47 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=4096, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 12, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 12, 160])
+Average Execution Time: 10803.48 us
+Peak Memory Usage: 290.03 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=4096, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 12, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 12, 192])
+Average Execution Time: 10965.21 us
+Peak Memory Usage: 343.03 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=4096, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 12, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 12, 256])
+Average Execution Time: 11297.16 us
+Peak Memory Usage: 457.03 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=8192, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 12, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 12, 64])
+Average Execution Time: 5616.74 us
+Peak Memory Usage: 108.94 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=8192, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 12, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 12, 96])
+Average Execution Time: 10953.16 us
+Peak Memory Usage: 162.94 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=8192, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 12, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 12, 128])
+Average Execution Time: 11074.16 us
+Peak Memory Usage: 216.94 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=8192, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 12, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 12, 160])
+Average Execution Time: 41537.36 us
+Peak Memory Usage: 572.06 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=8192, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 12, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 12, 192])
+Average Execution Time: 42137.93 us
+Peak Memory Usage: 686.06 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=8192, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 12, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 12, 256])
+Average Execution Time: 43848.89 us
+Peak Memory Usage: 914.06 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=16384, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 12, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 12, 64])
+Average Execution Time: 19500.28 us
+Peak Memory Usage: 217.88 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=16384, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 12, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 12, 96])
+Average Execution Time: 41491.92 us
+Peak Memory Usage: 325.88 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=16384, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 12, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 12, 128])
+Average Execution Time: 41454.61 us
+Peak Memory Usage: 433.88 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=16384, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 12, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 12, 160])
+Average Execution Time: 174689.04 us
+Peak Memory Usage: 1144.12 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=16384, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 12, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 12, 192])
+Average Execution Time: 176578.86 us
+Peak Memory Usage: 1372.12 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=16384, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 12, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 12, 256])
+Average Execution Time: 182268.85 us
+Peak Memory Usage: 1828.12 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=32768, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 12, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 12, 64])
+Average Execution Time: 77012.50 us
+Peak Memory Usage: 435.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=32768, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 12, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 12, 96])
+Average Execution Time: 172400.34 us
+Peak Memory Usage: 651.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=32768, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 12, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 12, 128])
+Average Execution Time: 173597.44 us
+Peak Memory Usage: 867.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=32768, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 12, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 12, 160])
+Average Execution Time: 764460.96 us
+Peak Memory Usage: 2288.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=32768, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 12, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 12, 192])
+Average Execution Time: 768987.19 us
+Peak Memory Usage: 2744.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=32768, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 12, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 12, 256])
+Average Execution Time: 782764.54 us
+Peak Memory Usage: 3656.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=65536, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 12, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 12, 64])
+Average Execution Time: 317447.38 us
+Peak Memory Usage: 871.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=65536, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 12, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 12, 96])
+Average Execution Time: 743496.34 us
+Peak Memory Usage: 1303.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=65536, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 12, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 12, 128])
+Average Execution Time: 757042.14 us
+Peak Memory Usage: 1735.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=65536, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 12, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 12, 160])
+Average Execution Time: 3203155.68 us
+Peak Memory Usage: 4576.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=65536, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 12, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 12, 192])
+Average Execution Time: 3218815.57 us
+Peak Memory Usage: 5488.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=65536, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 12, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 12, 256])
+Average Execution Time: 3279833.66 us
+Peak Memory Usage: 7312.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=131072, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 12, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 12, 64])
+Average Execution Time: 1392819.28 us
+Peak Memory Usage: 1743.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=131072, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 12, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 12, 96])
+Average Execution Time: 3082665.90 us
+Peak Memory Usage: 2607.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=131072, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 12, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 12, 128])
+Average Execution Time: 3142229.34 us
+Peak Memory Usage: 3471.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=131072, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 12, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 12, 160])
+Average Execution Time: 13140810.15 us
+Peak Memory Usage: 9153.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=131072, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 12, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 12, 192])
+Average Execution Time: 13230510.66 us
+Peak Memory Usage: 10977.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=12, T=131072, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 12, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 12]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 12, 256])
+Average Execution Time: 13464187.79 us
+Peak Memory Usage: 14625.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=4096, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 16, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 16, 64])
+Average Execution Time: 2654.13 us
+Peak Memory Usage: 72.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=4096, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 16, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 16, 96])
+Average Execution Time: 3975.52 us
+Peak Memory Usage: 108.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=4096, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 16, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 16, 128])
+Average Execution Time: 4880.40 us
+Peak Memory Usage: 144.62 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=4096, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 16, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 16, 160])
+Average Execution Time: 14257.31 us
+Peak Memory Usage: 381.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=4096, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 16, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 16, 192])
+Average Execution Time: 14452.71 us
+Peak Memory Usage: 457.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=4096, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 16, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 16, 256])
+Average Execution Time: 14725.45 us
+Peak Memory Usage: 609.38 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=8192, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 16, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 16, 64])
+Average Execution Time: 6894.00 us
+Peak Memory Usage: 145.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=8192, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 16, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 16, 96])
+Average Execution Time: 14057.66 us
+Peak Memory Usage: 217.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=8192, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 16, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 16, 128])
+Average Execution Time: 14071.22 us
+Peak Memory Usage: 289.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=8192, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 16, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 16, 160])
+Average Execution Time: 54765.27 us
+Peak Memory Usage: 762.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=8192, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 16, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 16, 192])
+Average Execution Time: 55505.74 us
+Peak Memory Usage: 914.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=8192, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 16, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 16, 256])
+Average Execution Time: 56761.38 us
+Peak Memory Usage: 1218.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=16384, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 16, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 16, 64])
+Average Execution Time: 25687.61 us
+Peak Memory Usage: 290.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=16384, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 16, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 16, 96])
+Average Execution Time: 55523.42 us
+Peak Memory Usage: 434.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=16384, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 16, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 16, 128])
+Average Execution Time: 54849.41 us
+Peak Memory Usage: 578.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=16384, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 16, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 16, 160])
+Average Execution Time: 233996.33 us
+Peak Memory Usage: 1525.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=16384, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 16, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 16, 192])
+Average Execution Time: 235660.81 us
+Peak Memory Usage: 1829.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=16384, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 16, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 16, 256])
+Average Execution Time: 237938.46 us
+Peak Memory Usage: 2437.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=32768, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 16, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 16, 64])
+Average Execution Time: 103757.44 us
+Peak Memory Usage: 581.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=32768, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 16, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 16, 96])
+Average Execution Time: 232616.23 us
+Peak Memory Usage: 869.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=32768, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 16, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 16, 128])
+Average Execution Time: 230173.06 us
+Peak Memory Usage: 1157.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=32768, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 16, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 16, 160])
+Average Execution Time: 1017639.43 us
+Peak Memory Usage: 3051.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=32768, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 16, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 16, 192])
+Average Execution Time: 1023518.30 us
+Peak Memory Usage: 3659.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=32768, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 16, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 16, 256])
+Average Execution Time: 1023616.17 us
+Peak Memory Usage: 4875.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=65536, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 16, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 16, 64])
+Average Execution Time: 434371.51 us
+Peak Memory Usage: 1162.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=65536, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 16, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 16, 96])
+Average Execution Time: 1016654.06 us
+Peak Memory Usage: 1738.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=65536, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 16, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 16, 128])
+Average Execution Time: 1014031.88 us
+Peak Memory Usage: 2314.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=65536, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 16, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 16, 160])
+Average Execution Time: 4270546.82 us
+Peak Memory Usage: 6102.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=65536, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 16, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 16, 192])
+Average Execution Time: 4298019.64 us
+Peak Memory Usage: 7318.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=65536, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 16, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 16, 256])
+Average Execution Time: 4282000.45 us
+Peak Memory Usage: 9750.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=131072, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 16, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 16, 64])
+Average Execution Time: 1893990.51 us
+Peak Memory Usage: 2324.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=131072, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 16, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 16, 96])
+Average Execution Time: 4151831.58 us
+Peak Memory Usage: 3476.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=131072, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 16, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 16, 128])
+Average Execution Time: 4132339.54 us
+Peak Memory Usage: 4628.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=131072, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 16, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 16, 160])
+Average Execution Time: 17537757.60 us
+Peak Memory Usage: 12204.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=131072, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 16, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 16, 192])
+Average Execution Time: 17674212.82 us
+Peak Memory Usage: 14636.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=16, T=131072, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 16, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 16]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 16, 256])
+Average Execution Time: 17617761.87 us
+Peak Memory Usage: 19500.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=4096, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 32, 64]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 32, 64])
+Average Execution Time: 4679.28 us
+Peak Memory Usage: 145.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=4096, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 32, 96]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 32, 96])
+Average Execution Time: 7642.35 us
+Peak Memory Usage: 217.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=4096, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 32, 128]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 32, 128])
+Average Execution Time: 8004.82 us
+Peak Memory Usage: 289.25 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=4096, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 32, 160]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 32, 160])
+Average Execution Time: 28403.38 us
+Peak Memory Usage: 762.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=4096, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 32, 192]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 32, 192])
+Average Execution Time: 28294.09 us
+Peak Memory Usage: 914.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=4096, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 4096, 32, 256]
+Input Shape (g): [B, T, H] = [1, 4096, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 4096, 32, 256])
+Average Execution Time: 31255.43 us
+Peak Memory Usage: 1218.75 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=8192, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 32, 64]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 32, 64])
+Average Execution Time: 15245.19 us
+Peak Memory Usage: 290.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=8192, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 32, 96]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 32, 96])
+Average Execution Time: 27261.26 us
+Peak Memory Usage: 434.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=8192, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 32, 128]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 32, 128])
+Average Execution Time: 27185.10 us
+Peak Memory Usage: 578.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=8192, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 32, 160]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 32, 160])
+Average Execution Time: 110443.08 us
+Peak Memory Usage: 1525.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=8192, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 32, 192]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 32, 192])
+Average Execution Time: 112224.23 us
+Peak Memory Usage: 1829.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=8192, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 8192, 32, 256]
+Input Shape (g): [B, T, H] = [1, 8192, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 8192, 32, 256])
+Average Execution Time: 115335.80 us
+Peak Memory Usage: 2437.50 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=16384, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 32, 64]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 32, 64])
+Average Execution Time: 50546.08 us
+Peak Memory Usage: 581.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=16384, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 32, 96]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 32, 96])
+Average Execution Time: 110374.51 us
+Peak Memory Usage: 869.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=16384, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 32, 128]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 32, 128])
+Average Execution Time: 109294.05 us
+Peak Memory Usage: 1157.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=16384, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 32, 160]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 32, 160])
+Average Execution Time: 468846.26 us
+Peak Memory Usage: 3051.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=16384, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 32, 192]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 32, 192])
+Average Execution Time: 472955.17 us
+Peak Memory Usage: 3659.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=16384, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 16384, 32, 256]
+Input Shape (g): [B, T, H] = [1, 16384, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 16384, 32, 256])
+Average Execution Time: 481200.71 us
+Peak Memory Usage: 4875.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=32768, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 32, 64]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 32, 64])
+Average Execution Time: 206894.41 us
+Peak Memory Usage: 1162.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=32768, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 32, 96]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 32, 96])
+Average Execution Time: 467312.39 us
+Peak Memory Usage: 1738.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=32768, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 32, 128]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 32, 128])
+Average Execution Time: 464048.90 us
+Peak Memory Usage: 2314.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=32768, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 32, 160]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 32, 160])
+Average Execution Time: 2037902.90 us
+Peak Memory Usage: 6102.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=32768, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 32, 192]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 32, 192])
+Average Execution Time: 2052659.84 us
+Peak Memory Usage: 7318.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=32768, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 32768, 32, 256]
+Input Shape (g): [B, T, H] = [1, 32768, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 32768, 32, 256])
+Average Execution Time: 2055188.46 us
+Peak Memory Usage: 9750.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=65536, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 32, 64]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 32, 64])
+Average Execution Time: 884848.39 us
+Peak Memory Usage: 2324.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=65536, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 32, 96]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 32, 96])
+Average Execution Time: 2053183.46 us
+Peak Memory Usage: 3476.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=65536, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 32, 128]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 32, 128])
+Average Execution Time: 2058043.64 us
+Peak Memory Usage: 4628.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=65536, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 32, 160]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 32, 160])
+Average Execution Time: 8576385.95 us
+Peak Memory Usage: 12204.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=65536, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 32, 192]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 32, 192])
+Average Execution Time: 8635631.88 us
+Peak Memory Usage: 14636.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=65536, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 65536, 32, 256]
+Input Shape (g): [B, T, H] = [1, 65536, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 65536, 32, 256])
+Average Execution Time: 8648590.27 us
+Peak Memory Usage: 19500.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=131072, D=64 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 32, 64]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 32, 64])
+Average Execution Time: 3845523.23 us
+Peak Memory Usage: 4648.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=131072, D=96 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 32, 96]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 32, 96])
+Average Execution Time: 8361729.80 us
+Peak Memory Usage: 6952.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=131072, D=128 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 32, 128]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 32, 128])
+Average Execution Time: 8323935.57 us
+Peak Memory Usage: 9256.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=131072, D=160 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 32, 160]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 32, 160])
+Average Execution Time: 35191352.75 us
+Peak Memory Usage: 24408.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=131072, D=192 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 32, 192]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
+Warm-up complete.
+
+Starting timer for 50 runs (forward + backward)...
+Timing complete.
+
+Measuring peak memory usage (forward + backward)...
+Memory measurement complete.
+
+---- Benchmark Results (Forward + Backward Pass) ----
+Output Shape: torch.Size([1, 131072, 32, 192])
+Average Execution Time: 35429750.87 us
+Peak Memory Usage: 29272.00 MB
+--------------------------------------------------
+
+--- Test Parameters: B=1, H=32, T=131072, D=256 ---
+---- Configuration (Backward Pass) ----
+Version to Test: parallel
+Device: cuda
+Data Type: torch.bfloat16
+Input Shape (q, k, v): [B, T, H, D] = [1, 131072, 32, 256]
+Input Shape (g): [B, T, H] = [1, 131072, 32]
+Warm-up Runs: 10
+Timed Runs: 50
+---------------------------------------
+
+Starting warm-up (forward + backward)...
