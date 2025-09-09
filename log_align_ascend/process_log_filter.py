@@ -49,7 +49,6 @@ def parse_log_file(file_path):
 
 
 def main():
-    # 日志文件和别名映射
     log_configs = {
         'materialized': 'chunk.log',
         'non-materialized': 'fused_chunk.log',
@@ -75,32 +74,26 @@ def main():
             combined_time[params][f'{name}_backward_us'] = metrics['backward_time']
             combined_mem[params][f'{name}_mem_mb'] = metrics['memory']
 
-    # 转换为DataFrame
     df_time = pd.DataFrame(list(combined_time.values()))
     df_mem = pd.DataFrame(list(combined_mem.values()))
 
-    # === 只保留 D ∈ {64, 96, 128} 的数据 ===
+    # 只保留 D ∈ {64,96,128}
     target_dims = {64, 96, 128}
     df_time = df_time[df_time['D'].isin(target_dims)]
     df_mem = df_mem[df_mem['D'].isin(target_dims)]
 
-    # === 写时间报告 ===
+    # === 按照 Head 数 H 输出 ===
     with pd.ExcelWriter('time_report.xlsx', engine='openpyxl') as writer:
-        # 总表
         df_time.to_excel(writer, sheet_name='Summary', index=False)
-        # 按 HeadDim 分表
-        for d in sorted(df_time['D'].unique()):
-            df_time[df_time['D'] == d].to_excel(writer, sheet_name=f'Dim={d}', index=False)
+        for h in sorted(df_time['H'].unique()):
+            df_time[df_time['H'] == h].to_excel(writer, sheet_name=f'Head={h}', index=False)
 
-    # === 写显存报告 ===
     with pd.ExcelWriter('memory_report.xlsx', engine='openpyxl') as writer:
-        # 总表
         df_mem.to_excel(writer, sheet_name='Summary', index=False)
-        # 按 HeadDim 分表
-        for d in sorted(df_mem['D'].unique()):
-            df_mem[df_mem['D'] == d].to_excel(writer, sheet_name=f'Dim={d}', index=False)
+        for h in sorted(df_mem['H'].unique()):
+            df_mem[df_mem['H'] == h].to_excel(writer, sheet_name=f'Head={h}', index=False)
 
-    print("✅ 已生成 time_report.xlsx 和 memory_report.xlsx，只包含 D=64,96,128 的数据！")
+    print("✅ 已生成 time_report.xlsx 和 memory_report.xlsx，只包含 D=64,96,128 且按照 H 分 sheet！")
 
 
 if __name__ == "__main__":
