@@ -12,6 +12,9 @@ LOG_NAME_MAP = {
     "lo_cmm_mem.log": "lo_cmm",
 }
 
+# 只保留这些D
+VALID_D = {64, 96, 128}
+
 
 def parse_log_file(file_path):
     """
@@ -39,6 +42,8 @@ def parse_log_file(file_path):
 
         if param_match and mem_match:
             B, H, T, D = map(int, param_match.groups())
+            if D not in VALID_D:  # 过滤D
+                continue
             memory = float(mem_match.group(1))
             results[(B, H, T, D)] = memory
     return results
@@ -58,7 +63,7 @@ def main():
             all_data[params][alias] = mem
 
     if not all_data:
-        print("❌ No data parsed! Exiting.")
+        print("❌ No valid data parsed! Exiting.")
         return
 
     df = pd.DataFrame(list(all_data.values()))
